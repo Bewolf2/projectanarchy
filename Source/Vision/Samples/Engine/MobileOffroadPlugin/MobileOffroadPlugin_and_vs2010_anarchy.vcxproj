@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION+PHYSICS_2012"
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkAndroid">
+      <Configuration>Debug</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkAndroid">
+      <Configuration>Dev</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkAndroid">
+      <Configuration>Release</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8199D84A-8759-34BA-9828-DC808E15DAAC}</ProjectGuid>
+    <TargetFrameworkVersion></TargetFrameworkVersion>
+    <Keyword>StaticLibrary</Keyword>
+    <RootNamespace></RootNamespace>
+    <ProjectName>MobileOffroadPlugin</ProjectName>
+    
+  </PropertyGroup>
+<Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.props" />
+  <PropertyGroup>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">.a</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">.a</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">.a</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\debug\MobileOffroadPlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">libMobileOffroadPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\debug\libMobileOffroadPlugin.a</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\dev\MobileOffroadPlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">libMobileOffroadPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\dev\libMobileOffroadPlugin.a</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\release\MobileOffroadPlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">libMobileOffroadPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\release\libMobileOffroadPlugin.a</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'"></LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/MobileOffroadPlugin/MobileOffroadPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Vision/Samples/Engine/MobileOffroadPlugin/MobileOffroadPCH.h.gch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections -fno-inline %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;USE_FILESERVE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>O0</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libMobileOffroadPlugin.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lfmodexL;-lfmodeventL;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Debug.a;-lVisionEnginePlugin;-lvHavok;-lvFmodEnginePlugin;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\debug;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lfmodexL;-lfmodeventL;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Debug.a;-lVisionEnginePlugin;-lvHavok;-lvFmodEnginePlugin;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\debug;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/MobileOffroadPlugin/MobileOffroadPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Vision/Samples/Engine/MobileOffroadPlugin/MobileOffroadPCH.h.gch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HK_DEBUG;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;USE_FILESERVE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libMobileOffroadPlugin.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lfmodex;-lfmodevent;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lVisionEnginePlugin;-lvHavok;-lvFmodEnginePlugin;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\dev;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lfmodex;-lfmodevent;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lVisionEnginePlugin;-lvHavok;-lvFmodEnginePlugin;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\dev;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/MobileOffroadPlugin/MobileOffroadPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Vision/Samples/Engine/MobileOffroadPlugin/MobileOffroadPCH.h.gch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;USE_FILESERVE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libMobileOffroadPlugin.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lfmodex;-lfmodevent;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lVisionEnginePlugin;-lvHavok;-lvFmodEnginePlugin;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\release;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lfmodex;-lfmodevent;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lVisionEnginePlugin;-lvHavok;-lvFmodEnginePlugin;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\release;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Vehicle.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Plugin.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="MobileOffroadGame.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="MobileOffroadGame.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="MobileOffroadPCH.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Vehicle.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="MobileOffroadPCH.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Plugin.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="VehicleSetup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VehicleSetup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+<Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>

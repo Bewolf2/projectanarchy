@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION+PHYSICS_2012+ANIMATION+AI+BEHAVIOR"
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkAndroid">
+      <Configuration>Debug</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkAndroid">
+      <Configuration>Dev</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkAndroid">
+      <Configuration>Release</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2C9AE4F-0F90-406E-85BA-F9DA83AA90FF}</ProjectGuid>
+    <TargetFrameworkVersion></TargetFrameworkVersion>
+    <Keyword>StaticLibrary</Keyword>
+    <RootNamespace></RootNamespace>
+    <ProjectName>RPGPlugin</ProjectName>
+    
+  </PropertyGroup>
+<Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.props" />
+  <PropertyGroup>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">.a</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">.a</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">.a</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\debug\RPGPlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">libRPGPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\debug\libRPGPlugin.a</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\dev\RPGPlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">libRPGPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\dev\libRPGPlugin.a</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\release\RPGPlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">libRPGPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Lib\and_vs2010_anarchy\release\libRPGPlugin.a</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'"></LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeaderFile></PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>RPGPlugin.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections -fno-inline %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>O0</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libRPGPlugin.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lfmodexL;-lfmodeventL;-lVisionEnginePlugin;-lvHavok;-lvHavokAi;-lvHavokBehavior;-lvFmodEnginePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\debug;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lfmodexL;-lfmodeventL;-lVisionEnginePlugin;-lvHavok;-lvHavokAi;-lvHavokBehavior;-lvFmodEnginePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\debug;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeaderFile></PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>RPGPlugin.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HK_DEBUG;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libRPGPlugin.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lfmodex;-lfmodevent;-lVisionEnginePlugin;-lvHavok;-lvHavokAi;-lvHavokBehavior;-lvFmodEnginePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\dev;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lfmodex;-lfmodevent;-lVisionEnginePlugin;-lvHavok;-lvHavokAi;-lvHavokBehavior;-lvFmodEnginePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\dev;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeaderFile></PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>RPGPlugin.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libRPGPlugin.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lfmodex;-lfmodevent;-lVisionEnginePlugin;-lvHavok;-lvHavokAi;-lvHavokBehavior;-lvFmodEnginePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\release;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lfmodex;-lfmodevent;-lVisionEnginePlugin;-lvHavok;-lvHavokAi;-lvHavokBehavior;-lvFmodEnginePlugin;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\release;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/android/armeabi-v7a</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="HighlightableComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GameManager.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionDie.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerUIDialog.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ManaPickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="MeshTrailEffectComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="InventoryItem.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="InventoryItem.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="HighlightableComponentManager.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="FloatingEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Pickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Precompiled.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionMeleeAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionBlock.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Renderer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionDodge.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="AiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="InventoryPickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="MeleeGuardian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionDodge.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="MeleeGuardianAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="InteractableComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="InventoryPickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerSpawnPoint.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="InventoryHandler.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AttackableComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerCharacter.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="VisionHavokBehaviorWorldListener.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionUserMessages.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CharacterActionData.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="DummyEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionHandler.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CharacterStats.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Trigger.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionMove.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Precompiled.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionMeleeAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="RangedGuardianAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="LevelInfo.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GUIHud_VisionGUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VisionEffectHelper.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerSpawnPoint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <None Include="VisionHavokConversion.inl"><DeploymentContent>False</DeploymentContent></None>
+    <ClCompile Include="VisionHavokBehaviorHelper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="MeleeGuardian.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GameManager.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Trigger.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Projectile.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionTimer.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerCharacterSynchronizationGroup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="BossAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionRangedAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionGameDebug.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ProjectileHealing.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="DestructibleEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="HighlightableComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="RangedGuardian.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AiCharacter.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionSpawn.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionSerializer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionChallenge.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionPowerAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="HealthPickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Plugin.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="HealthPickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="MeleeGuardianAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Action.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="GUIManager.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="DestructibleEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GUIManager_VisionGUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="CharacterActionData.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="CasterGuardianAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionSpawn.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUIHud_VisionGUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Action.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="AttackableComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerCharacter.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionHavokBehaviorWorldListener.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="PlayerCharacterSynchronizationGroup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="AiSpawnPoint.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Explosion.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="PlayerUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUIManager.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="MeshTrailEffectComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="RangedGuardian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionTimer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="DependencyHelper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="DamageableEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="DependencyHelper.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Character.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AiSpawnPoint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Plugin.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionAttackBase.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionPowerAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CasterGuardian.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="LevelInfo.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="GUIMinimap_VisionGUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionAoeAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionHandler.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="InteractableComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="AiCharacter.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Effect.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUIMinimap_VisionGUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionGameDebug.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionHavokBehaviorHelper.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionChallenge.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="BossAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CharacterStats.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CasterGuardian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Explosion.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionSerializer.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ManaPickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="PlayerControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Character.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="PlayerUIDialog.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionAoeAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Effect.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="SpawnPoint.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="InventoryHandler.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionAttackBase.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Attachment.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Boss.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionHeal.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="DamageableEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="BaseComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="RangedGuardianAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionRangedAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Renderer.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="HighlightableComponentManager.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="DummyEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="BaseEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionDie.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="SpawnPoint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Pickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionEffectHelper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionModuleTypes.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="GUIManager_VisionGUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionHavokConversion.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionHeal.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Boss.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Attachment.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ProjectileHealing.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionMove.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionBlock.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="BaseComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CasterGuardianAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="BaseEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Projectile.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="FloatingEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+<Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>

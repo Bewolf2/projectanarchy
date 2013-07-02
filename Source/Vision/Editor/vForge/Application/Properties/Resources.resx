@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_shaded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_shaded.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manifest_settings_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\manifest_settings_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_profile_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_profile_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_export.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\zoom_out.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_move" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_move.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manifest_settings_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\manifest_settings_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lua_table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lua_table.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_stop_game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_stop_game.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_checks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_checks.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_selection_tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_selection_tools.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\pick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_camera_move" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_camera_move.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_scale_uniform_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_scale_uniform_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_rotate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_stop_animate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_stop_animate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_timeofday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_timeofday.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_document_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_document_settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_mobile_active" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_mobile_active.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\delete2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_saveall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_saveall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_redo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sort_descending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\sort_descending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_link_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_link_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_paste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_visibility" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_visibility.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_select" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_select.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lua_blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lua_blank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frame_autoselect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\frame_autoselect.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_export_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_export_settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flags" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\flags.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_scale_nonuniform_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_scale_nonuniform_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="child_nodes_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\child_nodes_icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_camera_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_camera_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="breakpoint_into" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\breakpoint_into.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unload_zone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\unload_zone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="camera2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\camera2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_undo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_light_reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_light_reset.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_recent_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_recent_selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\lock_view.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lua_userdata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lua_userdata.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_ygizmo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toolbar\toolbar_ygizmo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_camera_orbit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_camera_orbit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_properties" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_properties.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_caption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_caption.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magnet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\magnet.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pawn_view" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\pawn_view.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_light.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\wrench.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save_as" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\save_as.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_camera_keys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_camera_keys.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_help.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_filter.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_profile_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_profile_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_tangents" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_tangents.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_stop_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_stop_editor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_save_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_save_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_library_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_library_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\folder_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_checker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_checker.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_new_scene" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_new_scene.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_list" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_list.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_green_down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\arrow_green_down.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isolate_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\isolate_selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_perspective" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\view_perspective.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sort_ascending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\sort_ascending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightbulb_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\lightbulb_on.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_plugins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_plugins.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zoom_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\zoom_in.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_profile_manager_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_profile_manager_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_tool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_tool.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_mode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_mode.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sort_az_ascending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\sort_az_ascending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_recentscenes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_recentscenes.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_light_settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_light_settings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\icons.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_play_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_play_editor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_open_scene" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_open_scene.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\view_1_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_mobile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_mobile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_play_game" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_play_game.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_post.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_folder_in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_folder_in.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_scale_nonuniform" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_scale_nonuniform.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_fullbright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_fullbright.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_close.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="breakpoint_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\breakpoint_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_checkboxes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_checkboxes.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pawn_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\pawn_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="child_nodes_rec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\child_nodes_rec.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_hotkeys" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_hotkeys.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_tod" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_tod.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_light_calc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_light_calc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="isolate_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\isolate_exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_sky" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_sky.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_unit_scale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_unit_scale.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="paste1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\paste.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_remove.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_focus_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_focus_selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="child_nodes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\child_nodes.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_document_links" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_document_links.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_profile_manager_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_profile_manager_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\MoveShape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_properties_selection" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_properties_selection.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_link" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_link.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_scale_uniform" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_scale_uniform.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_check" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_check.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ball_glass_blue_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ball_glass_blue_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_gamepad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_gamepad.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_new.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\view_right.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_open_project" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_open_project.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_library_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_library_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_plainwhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_plainwhite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_document.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="expand_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\expand_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_xgizmo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toolbar\toolbar_xgizmo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_save_as" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_save_as.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="manifest_settings_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\manifest_settings_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\view_top.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sort_az_descending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\sort_az_descending.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_normals" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_normals.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_fog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_fog.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="folder_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\folder_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_layer_zones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_layer_zones.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ball_glass_grey_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ball_glass_grey_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_panels" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_panels.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_resources" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_resources.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_normalmap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_normalmap.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\view_front.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_16x16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="node" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\node.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fit_to_size" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\fit_to_size.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rename" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\rename.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lua_function" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lua_function.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="memory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\memory.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_resources_small" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_resources_small.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_profile_manager_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_profile_manager_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frame_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\frame_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="align_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\align_normal.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_recentproject" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_recentproject.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_solid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_solid.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="align_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\align_16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\arrow_up_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_new_project" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_new_project.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="links" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\links.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_duplicates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_duplicates.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setup_grid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons\setup_grid.ico;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="collapse_all" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\collapse_all.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_refresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\lock.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_wireframe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_wireframe.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frame_selected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\frame_selected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_editor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_editor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gizmo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\gizmo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_camera.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_default.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add_zone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add_zone.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_play_animate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_play_animate.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_start.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_save_scene" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_save_scene.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_folder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lock_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\lock_open.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yes.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_gizmo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_gizmo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\arrow_down_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_delete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RotateShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\RotateShape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_export_quick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_export_quick.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lua_local" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lua_local.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_measure" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_measure.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="view_overdraw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bitmaps\toolbarEngineView\view_overdraw.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_zgizmo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toolbar\toolbar_zgizmo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_profile_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_profile_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_library_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_library_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="asset_24x24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Bitmaps\Icons\asset_24x24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="toolbar_screenshot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\toolbar\toolbar_screenshot.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ScaleShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16x16\ScaleShape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TransformAsset24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TransformAsset24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

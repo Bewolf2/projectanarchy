@@ -1,0 +1,128 @@
+{
+    "Profiles": {
+        "pcdx9": {
+            "Platform": "DX9"
+        },
+        "android": {
+            "Platform": "ANDROID"
+        },
+        "ios": {
+            "Platform": "iOS"
+        }
+    },
+    "TransformRuleTemplates": {
+        "Default": {
+            "pcdx9": {
+                "Texture": {
+                    "TextureTransformationRule": {
+                        "Compression": "Quality",
+                        "RemoveAlphaChannel": false,
+                        "CreateMipMaps": true,
+                        "DownscaleLevel": 0,
+                        "MinimumSize": 0,
+                        "MaximumSize": 0
+                    }
+                },
+                "StaticMesh": {
+                    "None": {
+
+                    }
+                },
+                "Model": {
+                    "None": {
+
+                    }
+                },
+                "Prefab": {
+                    "None": {
+
+                    }
+                },
+                "Animation": {
+                    "None": {
+
+                    }
+                },
+                "CollisionMesh": {
+                    "None": {
+
+                    }
+                }
+            },
+            "android": {
+                "Texture": {
+                    "TextureTransformationRule": {
+                        "Compression": "Quality",
+                        "RemoveAlphaChannel": false,
+                        "CreateMipMaps": true,
+                        "DownscaleLevel": 0,
+                        "MinimumSize": 0,
+                        "MaximumSize": 0
+                    }
+                },
+                "StaticMesh": {
+                    "None": {
+
+                    }
+                },
+                "Model": {
+                    "None": {
+
+                    }
+                },
+                "Prefab": {
+                    "None": {
+
+                    }
+                },
+                "Animation": {
+                    "None": {
+
+                    }
+                },
+                "CollisionMesh": {
+                    "None": {
+
+                    }
+                }
+            },
+            "ios": {
+                "Texture": {
+                    "TextureTransformationRule": {
+                        "Compression": "Quality",
+                        "RemoveAlphaChannel": false,
+                        "CreateMipMaps": true,
+                        "DownscaleLevel": 0,
+                        "MinimumSize": 0,
+                        "MaximumSize": 0
+                    }
+                },
+                "StaticMesh": {
+                    "None": {
+
+                    }
+                },
+                "Model": {
+                    "None": {
+
+                    }
+                },
+                "Prefab": {
+                    "None": {
+
+                    }
+                },
+                "Animation": {
+                    "None": {
+
+                    }
+                },
+                "CollisionMesh": {
+                    "None": {
+
+                    }
+                }
+            }
+        }
+    }
+}

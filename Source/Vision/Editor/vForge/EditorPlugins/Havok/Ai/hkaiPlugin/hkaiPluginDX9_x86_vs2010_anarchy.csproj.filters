@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Properties">
+        <UniqueIdentifier>33A753D3-A753-43A7-3D33-753D33A753D3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HavokAiPanel.Designer.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshSeedPointShape.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokAiTest.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="HavokAiPanel.resx">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="HavokNavMeshShape.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshTestPathShape.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokAiEditorPlugin.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshGlobalSettings.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshCarverShape.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokAiPanel.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="AssemblyInfo.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshGlobalSettingsActions.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshLocalSettingsShape.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+
+  </ItemGroup>
+</Project>

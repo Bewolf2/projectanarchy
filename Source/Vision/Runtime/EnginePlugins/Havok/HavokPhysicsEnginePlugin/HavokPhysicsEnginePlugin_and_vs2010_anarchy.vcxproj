@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012+VISION"
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkAndroid">
+      <Configuration>Debug</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkAndroid">
+      <Configuration>Dev</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkAndroid">
+      <Configuration>Release</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53B25EFB-8962-48B3-8FBA-847237788084}</ProjectGuid>
+    <TargetFrameworkVersion></TargetFrameworkVersion>
+    <Keyword>StaticLibrary</Keyword>
+    <RootNamespace></RootNamespace>
+    <ProjectName>HavokPhysicsEnginePlugin</ProjectName>
+    
+  </PropertyGroup>
+<Import Project="..\..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>gnustl_static</AndroidStlType>
+  </PropertyGroup>
+  <Import Project="..\..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.props" />
+  <PropertyGroup>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">.a</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">.a</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">.a</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\..\Obj\and_vs2010_anarchy\debug\HavokPhysicsEnginePlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\..\Lib\and_vs2010_anarchy\debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">libvHavok</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\..\Lib\and_vs2010_anarchy\debug\libvHavok.a</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\..\Obj\and_vs2010_anarchy\dev\HavokPhysicsEnginePlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\..\Lib\and_vs2010_anarchy\dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">libvHavok</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\..\Lib\and_vs2010_anarchy\dev\libvHavok.a</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\..\Obj\and_vs2010_anarchy\release\HavokPhysicsEnginePlugin\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\..\Lib\and_vs2010_anarchy\release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">libvHavok</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\..\Lib\and_vs2010_anarchy\release\libvHavok.a</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'"></LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeaderFile></PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>HavokPhysicsEnginePlugin.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections -fno-inline %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>O0</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libvHavok.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Lib\and_vs2010_anarchy\debug</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Lib\and_vs2010_anarchy\debug</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeaderFile></PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>HavokPhysicsEnginePlugin.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HK_DEBUG;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libvHavok.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Lib\and_vs2010_anarchy\dev</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Lib\and_vs2010_anarchy\dev</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    
+    
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader></PrecompiledHeader>
+      <PrecompiledHeaderFile></PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>HavokPhysicsEnginePlugin.pch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libvHavok.a</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Lib\and_vs2010_anarchy\release</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\Lib\and_vs2010_anarchy\release</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="vHavokBallAndSocketConstraintChain.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokConstraintChain.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokConversionUtils.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokRagdollConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokConstraintChainRenderingData.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="HavokPhysicsEnginePluginPCH.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokShapeFactory.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokStaticMesh.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokCableConstraintChainRenderer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokRagdoll.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokDisplayHandler.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="CharacterControlStates\vCharacterStateClimbing.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokVisionShapes.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokPhysicsModule.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokBallAndSocketConstraintChain.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokCachedShape.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokPrismaticConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokPointToPlaneConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokHingeConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VThrowItemComponent.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VLineFollowerComponent.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokChainAnimation.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokVisualDebugger.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <Compile Include="Lua\vHavokRigidBody.i">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClInclude Include="vHavokConstraintChainRenderer.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokGenericConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokStiffSpringConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokPointToPlaneConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokDebugConstraintChainRenderer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokRagdoll.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokStiffSpringConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokConstraintChainRenderer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="CharacterControlStates\vCharacterStateJumping.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CharacterControlStates\vCharacterInput.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokElementManager.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokCpuJobThreadPool.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokPointToPathConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <Compile Include="Lua\vHavokTriggerVolume.i">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClCompile Include="VThrowItemComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokVisualDebugger.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokUserData.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokFileStreamAccess.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokCharacterController.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokHingeConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokRagdollConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="CharacterControlStates\vCharacterStateFlying.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokDisplayHandler.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="CharacterControlStates\vCharacterStateOnGround.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokVisionShapes.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokPulleyConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokStiffSpringConstraintChain.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokPrismaticConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokChainConstraintChainRenderer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokDebugConstraintChainRenderer.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokSerialize.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokPointToPathConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokPulleyConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokProfiler.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="CharacterControlStates\vCharacterStateInAir.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokSync.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokConstraintListener.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokSync.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokConstraintChainRenderingData.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CharacterControlStates\vCharacterStateClimbing.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokConstraintListener.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="CharacterControlStates\vCharacterStateJumping.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokContactListener.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VLineFollowerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokGenericConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokCableConstraintChainRenderer.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokBallAndSocketConstraint.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokCpuJobThreadPool.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokBallAndSocketConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Classes\HavokPhysicsEnginePluginTrackerClasses.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="CharacterControlStates\vCharacterStateInAir.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokPhysicsModule.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokChainConstraintChainRenderer.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <None Include="vHavokElementManager.inl"><DeploymentContent>False</DeploymentContent></None>
+    <ClCompile Include="Lua\PhysicsLuaModule_wrapper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokConstraint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokChainAnimation.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Classes\Reflections\vHavokVisionShapesReflection.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CharacterControlStates\vCharacterStateOnGround.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokPhysicsIncludes.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokShapeFactory.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VFpsCameraEntity.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="HavokPhysicsEnginePlugin.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VFpsCameraEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokTriggerVolume.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokContactListener.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokRigidBody.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokStaticMesh.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokConstraintChain.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vHavokFileStreamAccess.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <CustomBuild Include="Lua\HavokPhysicsLuaModule.i">
+        <AdditionalInputs>..\..\VisionEnginePlugin\Scripting\Lua\VColor.i;..\..\VisionEnginePlugin\Scripting\Lua\VTypedObject.i;..\..\VisionEnginePlugin\Scripting\Lua\VisApiTypedEngineObject.i;..\..\VisionEnginePlugin\Scripting\Lua\VisApiObjectComponent.i;Lua\vHavokCharacterController.i;Lua\vHavokRigidBody.i;Lua\vHavokRagdoll.i</AdditionalInputs>
+        <Outputs>Lua/PhysicsLuaModule_wrapper.cpp</Outputs>
+        <FileType>Document</FileType>
+        <Command>&quot;$(HAVOK_THIRDPARTY_DIR)\redistsdks\swig\2.0.3\swig.exe&quot; -c++ -lua -verbose -o Lua/PhysicsLuaModule_wrapper.cpp -I..\..\..\..\.. Lua\HavokPhysicsLuaModule.i&#x0D;&#x0A;&quot;..\..\..\..\..\..\Build\StandaloneTools\Iswig\Exe\iswig.exe&quot; --includePre &quot;Vision/Runtime/EnginePlugins/Havok/HavokPhysicsEnginePlugin/HavokPhysicsEnginePluginPCH.h Vision/Runtime/EnginePlugins/Havok/HavokPhysicsEnginePlugin/vHavokPhysicsModule.hpp Vision/Runtime/EnginePlugins/Havok/HavokPhysicsEnginePlugin/vHavokConstraint.hpp&quot; Lua/PhysicsLuaModule_wrapper.cpp</Command>
+        <DeploymentContent>False</DeploymentContent></CustomBuild>
+    <Compile Include="Lua\vHavokRagdoll.i">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClCompile Include="vHavokTriggerVolume.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokRigidBody.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokConversionUtils.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vHavokStiffSpringConstraintChain.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vHavokCachedShape.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vHavokCharacterController.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <Compile Include="Lua\vHavokCharacterController.i">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClInclude Include="CharacterControlStates\vCharacterStateFlying.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="HavokPhysicsEnginePluginPCH.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+<Import Project="..\..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>

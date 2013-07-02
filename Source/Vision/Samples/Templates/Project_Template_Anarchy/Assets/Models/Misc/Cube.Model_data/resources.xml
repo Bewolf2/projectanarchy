@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="Textures" Filename="Textures\colors\Color_Orange.dds" CustomInt="1,0" Size="128" />
+        <Resource Manager="EffectLibs" Filename="shaders\DeferredShading.ShaderLib" Size="214400" />
+        <Resource Manager="FILE" Filename="Models\Misc\Cube.Model_data\materials.xml" OwnerRes="3" Size="456" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\Misc\Cube.Model" CustomInt="1,2" Size="812" />
+    </Resources>
+</root>

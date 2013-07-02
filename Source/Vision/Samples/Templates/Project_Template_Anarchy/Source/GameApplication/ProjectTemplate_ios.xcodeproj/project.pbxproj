@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0768420000000000022738 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487400000000000022737 /* Foundation.framework */; };
+		1DE116281738092D00E51293 /* GameApplicationPCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE116241738092D00E51293 /* GameApplicationPCH.cpp */; };
+		1DE1163417380E0600E51293 /* VisSampleApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1163117380E0600E51293 /* VisSampleApp.cpp */; };
+		1DE1163517380E0600E51293 /* VisSampleAppCallbacks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1163217380E0600E51293 /* VisSampleAppCallbacks.cpp */; };
+		1DE1165A1739402100E51293 /* libGamePlugin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE116491739066600E51293 /* libGamePlugin.a */; };
+		1DE1169B1739530700E51293 /* VisAppDelegateIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE116911739530700E51293 /* VisAppDelegateIOS.m */; };
+		1DE1169C1739530700E51293 /* VisEAGLViewIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE116941739530700E51293 /* VisEAGLViewIOS.m */; };
+		1DE1169E1739530700E51293 /* VisMainIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE116961739530700E51293 /* VisMainIOS.m */; };
+		1DE1169F1739530700E51293 /* VisMainWindowIOS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE116971739530700E51293 /* VisMainWindowIOS.xib */; };
+		1DE116A01739530700E51293 /* VisViewControllerIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE116991739530700E51293 /* VisViewControllerIOS.m */; };
+		1DE116A11739530700E51293 /* VisViewControllerIOS.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DE1169A1739530700E51293 /* VisViewControllerIOS.xib */; };
+		2204200000000000022755 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 0942950000000000022753 /* Data */; };
+		2D6DA85F176628E1006ED258 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6DA85E176628E1006ED258 /* CoreData.framework */; };
+		2D6DA8611766290D006ED258 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D6DA8601766290D006ED258 /* SystemConfiguration.framework */; };
+		3508490000000000022681 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0759340000000000022679 /* main.cpp */; };
+		4663900000000000022734 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3252790000000000022733 /* OpenGLES.framework */; };
+		6371000000000000022736 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0439360000000000022735 /* UIKit.framework */; };
+		7090370000000000022740 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0125950000000000022739 /* QuartzCore.framework */; };
+		7354210000000000022746 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4647350000000000022741 /* Icon.png */; };
+		9063250000000000022750 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6336490000000000022749 /* Icon-72.png */; };
+		9836920000000000022748 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1189170000000000022747 /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DE116481739066600E51293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DE116441739066500E51293 /* GamePlugin_ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1DE116361738FBE100E51293;
+			remoteInfo = libGamePlugin;
+		};
+		1DE1167217394E1700E51293 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DE116441739066500E51293 /* GamePlugin_ios.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 504685136751641300000101;
+			remoteInfo = libGamePlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0125950000000000022739 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0439360000000000022735 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0759340000000000022679 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		0942950000000000022753 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
+		1189170000000000022747 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		1DE116241738092D00E51293 /* GameApplicationPCH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameApplicationPCH.cpp; sourceTree = "<group>"; };
+		1DE116251738092D00E51293 /* GameApplicationPCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameApplicationPCH.h; sourceTree = "<group>"; };
+		1DE1163117380E0600E51293 /* VisSampleApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisSampleApp.cpp; sourceTree = "<group>"; };
+		1DE1163217380E0600E51293 /* VisSampleAppCallbacks.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisSampleAppCallbacks.cpp; sourceTree = "<group>"; };
+		1DE116441739066500E51293 /* GamePlugin_ios.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GamePlugin_ios.xcodeproj; path = ../GamePlugin/GamePlugin_ios.xcodeproj; sourceTree = "<group>"; };
+		1DE116901739530700E51293 /* VisAppDelegateIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisAppDelegateIOS.h; sourceTree = "<group>"; };
+		1DE116911739530700E51293 /* VisAppDelegateIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisAppDelegateIOS.m; sourceTree = "<group>"; };
+		1DE116921739530700E51293 /* VisAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisAppSettings.h; sourceTree = "<group>"; };
+		1DE116931739530700E51293 /* VisEAGLViewIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisEAGLViewIOS.h; sourceTree = "<group>"; };
+		1DE116941739530700E51293 /* VisEAGLViewIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisEAGLViewIOS.m; sourceTree = "<group>"; };
+		1DE116951739530700E51293 /* VisionIOS.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisionIOS.cpp; sourceTree = "<group>"; };
+		1DE116961739530700E51293 /* VisMainIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisMainIOS.m; sourceTree = "<group>"; };
+		1DE116971739530700E51293 /* VisMainWindowIOS.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisMainWindowIOS.xib; sourceTree = "<group>"; };
+		1DE116981739530700E51293 /* VisViewControllerIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisViewControllerIOS.h; sourceTree = "<group>"; };
+		1DE116991739530700E51293 /* VisViewControllerIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisViewControllerIOS.m; sourceTree = "<group>"; };
+		1DE1169A1739530700E51293 /* VisViewControllerIOS.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisViewControllerIOS.xib; sourceTree = "<group>"; };
+		1DF33BFB1737F6CB000F2FBC /* ProjectTemplate_ios-xcode_dev_v7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ProjectTemplate_ios-xcode_dev_v7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D6DA85E176628E1006ED258 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		2D6DA8601766290D006ED258 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		3252790000000000022733 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4647350000000000022741 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5487400000000000022737 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6336490000000000022749 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		6814620000000000022751 /* Samples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Samples-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5875980000000000022773 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D6DA8611766290D006ED258 /* SystemConfiguration.framework in Frameworks */,
+				2D6DA85F176628E1006ED258 /* CoreData.framework in Frameworks */,
+				7090370000000000022740 /* QuartzCore.framework in Frameworks */,
+				6371000000000000022736 /* UIKit.framework in Frameworks */,
+				4663900000000000022734 /* OpenGLES.framework in Frameworks */,
+				0768420000000000022738 /* Foundation.framework in Frameworks */,
+				1DE1165A1739402100E51293 /* libGamePlugin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DE116451739066500E51293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DE116491739066600E51293 /* libGamePlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DE1168F1739530700E51293 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1DE116901739530700E51293 /* VisAppDelegateIOS.h */,
+				1DE116911739530700E51293 /* VisAppDelegateIOS.m */,
+				1DE116921739530700E51293 /* VisAppSettings.h */,
+				1DE116931739530700E51293 /* VisEAGLViewIOS.h */,
+				1DE116941739530700E51293 /* VisEAGLViewIOS.m */,
+				1DE116951739530700E51293 /* VisionIOS.cpp */,
+				1DE116961739530700E51293 /* VisMainIOS.m */,
+				1DE116971739530700E51293 /* VisMainWindowIOS.xib */,
+				1DE116981739530700E51293 /* VisViewControllerIOS.h */,
+				1DE116991739530700E51293 /* VisViewControllerIOS.m */,
+				1DE1169A1739530700E51293 /* VisViewControllerIOS.xib */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		1DF33BFC1737F6CB000F2FBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DF33BFB1737F6CB000F2FBC /* ProjectTemplate_ios-xcode_dev_v7.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2605410000000000022745 /* ../../Data */ = {
+			isa = PBXGroup;
+			children = (
+				6920950000000000022744 /* Common */,
+			);
+			path = ../../Data;
+			sourceTree = "<group>";
+		};
+		6850770000000000022680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D6DA8601766290D006ED258 /* SystemConfiguration.framework */,
+				2D6DA85E176628E1006ED258 /* CoreData.framework */,
+				1DE1168F1739530700E51293 /* iOS */,
+				1DE116441739066500E51293 /* GamePlugin_ios.xcodeproj */,
+				1DE1163117380E0600E51293 /* VisSampleApp.cpp */,
+				1DE1163217380E0600E51293 /* VisSampleAppCallbacks.cpp */,
+				1DE116241738092D00E51293 /* GameApplicationPCH.cpp */,
+				1DE116251738092D00E51293 /* GameApplicationPCH.h */,
+				0759340000000000022679 /* main.cpp */,
+				3252790000000000022733 /* OpenGLES.framework */,
+				0439360000000000022735 /* UIKit.framework */,
+				5487400000000000022737 /* Foundation.framework */,
+				0125950000000000022739 /* QuartzCore.framework */,
+				2605410000000000022745 /* ../../Data */,
+				0942950000000000022753 /* Data */,
+				1DF33BFC1737F6CB000F2FBC /* Products */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6920950000000000022744 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7755770000000000022743 /* iOS */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7755770000000000022743 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8053600000000000022742 /* Resources */,
+				6814620000000000022751 /* Samples-Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		8053600000000000022742 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4647350000000000022741 /* Icon.png */,
+				1189170000000000022747 /* Icon@2x.png */,
+				6336490000000000022749 /* Icon-72.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		554879136751641900000159 /* ProjectTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4333870000000000022768 /* Build configuration list for PBXNativeTarget "ProjectTemplate" */;
+			buildPhases = (
+				5051900000000000022770 /* Making symlinks to resources.... */,
+				3141660000000000022771 /* Sources */,
+				5875980000000000022773 /* Frameworks */,
+				6748220000000000022772 /* Resources */,
+				4256040000000000022774 /* Copy resources to bundle.... */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DE1167317394E1700E51293 /* PBXTargetDependency */,
+			);
+			name = ProjectTemplate;
+			productName = Tutorial01;
+			productReference = 1DF33BFB1737F6CB000F2FBC /* ProjectTemplate_ios-xcode_dev_v7.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8292950000000000022775 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8895300000000000022769 /* Build configuration list for PBXProject "ProjectTemplate_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6850770000000000022680 /* Products */;
+			productRefGroup = 1DF33BFC1737F6CB000F2FBC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1DE116451739066500E51293 /* Products */;
+					ProjectRef = 1DE116441739066500E51293 /* GamePlugin_ios.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				554879136751641900000159 /* ProjectTemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1DE116491739066600E51293 /* libGamePlugin.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGamePlugin.a;
+			remoteRef = 1DE116481739066600E51293 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6748220000000000022772 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2204200000000000022755 /* Data in Resources */,
+				9063250000000000022750 /* Icon-72.png in Resources */,
+				9836920000000000022748 /* Icon@2x.png in Resources */,
+				7354210000000000022746 /* Icon.png in Resources */,
+				1DE1169F1739530700E51293 /* VisMainWindowIOS.xib in Resources */,
+				1DE116A11739530700E51293 /* VisViewControllerIOS.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4256040000000000022774 /* Copy resources to bundle.... */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy resources to bundle....";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python $VISION_SDK/Build/StandaloneTools/Deployment/Python/copyiOSResources.py -d $BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH -r Data";
+		};
+		5051900000000000022770 /* Making symlinks to resources.... */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Making symlinks to resources....";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "python $VISION_SDK/Build/StandaloneTools/Deployment/Python/linkiOSResources.py -r ../../Data/Vision/Base/ Data/Vision/Base/ -r ../../Assets/ Data/Assets/ -l $CONFIGURATION";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3141660000000000022771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3508490000000000022681 /* main.cpp in Sources */,
+				1DE116281738092D00E51293 /* GameApplicationPCH.cpp in Sources */,
+				1DE1163417380E0600E51293 /* VisSampleApp.cpp in Sources */,
+				1DE1163517380E0600E51293 /* VisSampleAppCallbacks.cpp in Sources */,
+				1DE1169B1739530700E51293 /* VisAppDelegateIOS.m in Sources */,
+				1DE1169C1739530700E51293 /* VisEAGLViewIOS.m in Sources */,
+				1DE1169E1739530700E51293 /* VisMainIOS.m in Sources */,
+				1DE116A01739530700E51293 /* VisViewControllerIOS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DE1167317394E1700E51293 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libGamePlugin;
+			targetProxy = 1DE1167217394E1700E51293 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1348520000000000022760 /* debug_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				INFOPLIST_FILE = "../../Data/Common/iOS/Samples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Debug",
+					"$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-D_DEBUG",
+					"-DHK_DEBUG",
+					"-DHK_DEBUG_SLOW",
+					"-fno-inline",
+				);
+				OTHER_LDFLAGS = (
+					"-lluaIOS",
+					"-lBaseD",
+					"-lVisionD",
+					"-lVisionEnginePlugin",
+				);
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_debug_v7";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = debug_v7;
+		};
+		2111970000000000022763 /* distrib_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				COMPRESS_PNG_FILES = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				INFOPLIST_FILE = "../../Data/Common/iOS/Samples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Release",
+					"$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-fomit-frame-pointer",
+					"-fno-implement-inlines",
+				);
+				OTHER_LDFLAGS = (
+					"-lluaIOS",
+					"-lBase",
+					"-lVision",
+					"-lVisionEnginePlugin",
+				);
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_distrib_v7";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = distrib_v7;
+		};
+		2189500000000000022766 /* release_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_release_v7";
+				SYMROOT = ../../Bin/ios_xcode_anarchy/release_v7;
+			};
+			name = release_v7;
+		};
+		2260220000000000022762 /* release_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				INFOPLIST_FILE = "../../Data/Common/iOS/Samples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Release",
+					"$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-fomit-frame-pointer",
+					"-fno-implement-inlines",
+				);
+				OTHER_LDFLAGS = (
+					"-lluaIOS",
+					"-lBase",
+					"-lVision",
+					"-lVisionEnginePlugin",
+				);
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_release_v7";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = release_v7;
+		};
+		3091860000000000022764 /* debug_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_debug_v7";
+				SYMROOT = ../../Bin/ios_xcode_anarchy/debug_v7;
+			};
+			name = debug_v7;
+		};
+		3398580000000000022765 /* dev_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_dev_v7";
+				SYMROOT = ../../Bin/ios_xcode_anarchy/dev_v7;
+			};
+			name = dev_v7;
+		};
+		7771100000000000022767 /* distrib_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_distrib_v7";
+				SYMROOT = ../../Bin/ios_xcode_anarchy/distrib_v7;
+			};
+			name = distrib_v7;
+		};
+		8739460000000000022761 /* dev_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				INFOPLIST_FILE = "../../Data/Common/iOS/Samples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Release",
+					"$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)",
+				);
+				MACH_O_TYPE = mh_execute;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/ProjectTemplate";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-DHK_DEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-lluaIOS",
+					"-lBase",
+					"-lVision",
+					"-lVisionEnginePlugin",
+				);
+				PRODUCT_NAME = "ProjectTemplate_ios-xcode_dev_v7";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = dev_v7;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4333870000000000022768 /* Build configuration list for PBXNativeTarget "ProjectTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8739460000000000022761 /* dev_v7 */,
+				1348520000000000022760 /* debug_v7 */,
+				2111970000000000022763 /* distrib_v7 */,
+				2260220000000000022762 /* release_v7 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = dev_v7;
+		};
+		8895300000000000022769 /* Build configuration list for PBXProject "ProjectTemplate_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3398580000000000022765 /* dev_v7 */,
+				3091860000000000022764 /* debug_v7 */,
+				7771100000000000022767 /* distrib_v7 */,
+				2189500000000000022766 /* release_v7 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = dev_v7;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8292950000000000022775 /* Project object */;
+}

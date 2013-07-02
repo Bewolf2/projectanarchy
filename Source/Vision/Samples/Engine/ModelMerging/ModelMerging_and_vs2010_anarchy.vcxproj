@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "PHYSICS_2012+VISION"
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|hkAndroid">
+      <Configuration>Debug</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev|hkAndroid">
+      <Configuration>Dev</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|hkAndroid">
+      <Configuration>Release</Configuration>
+      <Platform>hkAndroid</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{512835C5-256B-332B-9FAE-6DA90FA9C0F3}</ProjectGuid>
+    <TargetFrameworkVersion></TargetFrameworkVersion>
+    <Keyword>Application</Keyword>
+    <RootNamespace></RootNamespace>
+    <ProjectName>ModelMerging</ProjectName>
+    
+  </PropertyGroup>
+<Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>stlport_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>stlport_static</AndroidStlType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>arm-linux-androideabi-4.6</PlatformToolset>
+    <AndroidAPILevel>android-10</AndroidAPILevel>
+    <AndroidArch>armv7-a</AndroidArch>
+    <AndroidStlType>stlport_static</AndroidStlType>
+  </PropertyGroup>
+  <Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.props" />
+  <PropertyGroup>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">.so</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">.so</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">.so</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\debug\ModelMerging\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Bin\and_vs2010_anarchy\Debug\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">libModelMerging_and-vs2010_anarchy_debug</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">..\..\..\..\..\Bin\and_vs2010_anarchy\Debug\libModelMerging_and-vs2010_anarchy_debug.so</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\dev\ModelMerging\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Bin\and_vs2010_anarchy\Dev\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">libModelMerging_and-vs2010_anarchy_dev</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">..\..\..\..\..\Bin\and_vs2010_anarchy\Dev\libModelMerging_and-vs2010_anarchy_dev.so</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Obj\and_vs2010_anarchy\release\ModelMerging\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Bin\and_vs2010_anarchy\Release\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">libModelMerging_and-vs2010_anarchy_release</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">..\..\..\..\..\Bin\and_vs2010_anarchy\Release\libModelMerging_and-vs2010_anarchy_release.so</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'"></LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'"></LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+    
+    
+    <PostBuildEvent>
+      <Command>..\..\..\..\..\Build\StandaloneTools\Deployment\Exe\deployAndroid.exe $(OutputFile) --pickleName $(ProjectFileName)_$(Configuration).deploy -j $(IntDir)$(JavaOutputDir) -s $(AndroidAPILevel) -i -e --asset ..\..\..\..\../Data/Vision/Base/ Data/Vision/Base/ --asset ..\..\..\..\../Data/Vision/Samples/Engine/Maps/SimpleGround/ Data/Vision/Samples/Engine/Maps/SimpleGround/ --asset ..\..\..\..\../Data/Vision/Samples/Engine/Models/Barbarian/ Data/Vision/Samples/Engine/Models/Barbarian/</Command>
+    </PostBuildEvent>
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/ModelMerging/ModelMergingPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Vision/Samples/Engine/ModelMerging/ModelMergingPCH.h.gch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections -fno-inline %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;_VISION_NO_WARNING_IMAGE_FORMAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>O0</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libModelMerging_and-vs2010_anarchy_debug.so</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lEGL;-lGLESv2;-lGLESv1_CM;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Debug.a;-lBaseD;-lVisionD;-lVisionEnginePlugin;-lvHavok;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\debug;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lEGL;-lGLESv2;-lGLESv1_CM;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Debug.a;-lBaseD;-lVisionD;-lVisionEnginePlugin;-lvHavok;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\debug;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+    
+    
+    <PostBuildEvent>
+      <Command>..\..\..\..\..\Build\StandaloneTools\Deployment\Exe\deployAndroid.exe $(OutputFile) --pickleName $(ProjectFileName)_$(Configuration).deploy -j $(IntDir)$(JavaOutputDir) -s $(AndroidAPILevel) -i --asset ..\..\..\..\../Data/Vision/Base/ Data/Vision/Base/ --asset ..\..\..\..\../Data/Vision/Samples/Engine/Maps/SimpleGround/ Data/Vision/Samples/Engine/Maps/SimpleGround/ --asset ..\..\..\..\../Data/Vision/Samples/Engine/Models/Barbarian/ Data/Vision/Samples/Engine/Models/Barbarian/</Command>
+    </PostBuildEvent>
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/ModelMerging/ModelMergingPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Vision/Samples/Engine/ModelMerging/ModelMergingPCH.h.gch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>HK_DEBUG;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;_VISION_NO_WARNING_IMAGE_FORMAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libModelMerging_and-vs2010_anarchy_dev.so</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lEGL;-lGLESv2;-lGLESv1_CM;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lBase;-lVision;-lVisionEnginePlugin;-lvHavok;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\dev;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lEGL;-lGLESv2;-lGLESv1_CM;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lBase;-lVision;-lVisionEnginePlugin;-lvHavok;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\dev;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+    
+    
+    <PostBuildEvent>
+      <Command>..\..\..\..\..\Build\StandaloneTools\Deployment\Exe\deployAndroid.exe $(OutputFile) --pickleName $(ProjectFileName)_$(Configuration).deploy -j $(IntDir)$(JavaOutputDir) -s $(AndroidAPILevel) -i --asset ..\..\..\..\../Data/Vision/Base/ Data/Vision/Base/ --asset ..\..\..\..\../Data/Vision/Samples/Engine/Maps/SimpleGround/ Data/Vision/Samples/Engine/Maps/SimpleGround/ --asset ..\..\..\..\../Data/Vision/Samples/Engine/Models/Barbarian/ Data/Vision/Samples/Engine/Models/Barbarian/</Command>
+    </PostBuildEvent>
+    
+    <ClCompile>
+      <CompileAs>Default</CompileAs>
+      <ExceptionHandling></ExceptionHandling>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <PrecompiledHeader>Yes</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/ModelMerging/ModelMergingPCH.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)Vision/Samples/Engine/ModelMerging/ModelMergingPCH.h.gch</PrecompiledHeaderOutputFile>
+      <AdditionalOptions>-ffunction-sections %(AdditionalOptions) %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>;HK_ANARCHY;PROFILING;_VISION_POSIX;_VISION_ANDROID;_VISION_NO_WARNING_IMAGE_FORMAT;VBASE_LIB;LINK_WITH_VISION;VISIONDLL_LIB;USE_HAVOK;_VISION_NO_WARNING_IMAGE_FORMAT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);..\..\..\..;$(ANDROID_NDK_ROOT)/sources;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProducesObjectFile>true</ProducesObjectFile>
+      <OptimizationLevel>Ofast</OptimizationLevel>
+      <CppInliningLevel></CppInliningLevel>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <Support__noinlineKeyword></Support__noinlineKeyword>
+      <ANSIAliasingRules>Off</ANSIAliasingRules>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling></CppExceptionHandling>
+      <CLanguageDialect>ISO_C99</CLanguageDialect>
+      <ImplicitSourceFileInclusion>Off</ImplicitSourceFileInclusion>
+      <SupportImplicitTypenames></SupportImplicitTypenames>
+      <RunTimeTypeInformationSupport></RunTimeTypeInformationSupport>
+      <ObjectFileName>$(IntDir)%(FileName).o</ObjectFileName>
+      <QuitAfterWarnings>Off</QuitAfterWarnings>
+      <Warnings>AllWarnings</Warnings>
+      <LineWrapMessages>Off</LineWrapMessages>
+      <SetMessageToSilent></SetMessageToSilent>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <InternalSwitch>332</InternalSwitch>
+      <SDAOptimization>none</SDAOptimization>
+      <LinkOnceTemplate>On</LinkOnceTemplate>
+      <AllocationGlobalVariable>UniqueDefinitions</AllocationGlobalVariable>
+      <ForcedIncludeFile></ForcedIncludeFile>
+      <ConcurrentCompile>False</ConcurrentCompile>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)\libModelMerging_and-vs2010_anarchy_release.so</OutputFile>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <LibrarianCommand>-rmc</LibrarianCommand>
+      <AdditionalDependencies>-lEGL;-lGLESv2;-lGLESv1_CM;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lBase;-lVision;-lVisionEnginePlugin;-lvHavok;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\release;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>-landroid;-lEGL;-lGLESv2;-lGLESv1_CM;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib\LuaAndroid_Release.a;-lBase;-lVision;-lVisionEnginePlugin;-lvHavok;-lhkInternal;-lhkGeometryUtilities;-lhkVisualize;-lhkSerialize;-lhkCompat;-lhkSceneData;-lhkBase;-lhkcdCollide;-lhkcdInternal;-lhkpUtilities;-lhkpVehicle;-lhkpDynamics;-lhkpCollide;-lhkpInternal;-lhkpConstraintSolver;-lhkpConstraint;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\and_vs2010_anarchy\release;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib</AdditionalLibraryDirectories>
+      <AdditionalLinkerOptions>-nosegments_always_executable</AdditionalLinkerOptions>
+      <OptimizationStrategy>general</OptimizationStrategy>
+      <SourceRoot>.</SourceRoot>
+      <DebuggingLevel>MULTI</DebuggingLevel>
+      <MarksUnreferencedSymbols>Yes</MarksUnreferencedSymbols>
+      <CppLanguageDialect>GNU</CppLanguageDialect>
+      <CppExceptionHandling>Off</CppExceptionHandling>
+      <CPU>espresso</CPU>
+      <WarnDboNotFoundMax></WarnDboNotFoundMax>
+      <EntryPoint>_start</EntryPoint>
+      <StartupFiles></StartupFiles>
+      <DoNotUsedStartupFiles>Yes</DoNotUsedStartupFiles>
+      <LinkOnceTemplate>Off</LinkOnceTemplate>
+      <SDAOptimization>none</SDAOptimization>
+      <AutomaticSDA>No</AutomaticSDA>
+      <DisableSDAOptimization>No</DisableSDAOptimization>
+    </Link>
+    <PreLink>
+      <ImportLibraryFile>$(OutDir)$(TargetName).a</ImportLibraryFile>
+    </PreLink>
+    <PreLink>
+      <LogFile></LogFile>
+    </PreLink>
+    <PreLink>
+      <OutputFile>$(IntDir)$(TargetName)_rpl_export.o</OutputFile>
+      <AntiDEFFile></AntiDEFFile>
+      <DEFFile></DEFFile>
+      <DeprecatedImpliedNoObjects>Yes</DeprecatedImpliedNoObjects>
+      <ExportAll>No</ExportAll>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <ModuleName>$(TargetName)</ModuleName>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PreLink>
+    <PostLink>
+      <ImportLibraryFile></ImportLibraryFile>
+      <InputFile>$(OutDir)$(TargetName).elf</InputFile>
+      <CheckNoSDA>No</CheckNoSDA>
+      <DoNotCompress>No</DoNotCompress>
+      <EmitWarning>No</EmitWarning>
+      <ForceRPX>Yes</ForceRPX>
+      <HeapSize></HeapSize>
+      <NoLib>Yes</NoLib>
+      <PrintVerboseInfo>No</PrintVerboseInfo>
+      <SetDynamicOnlyFlag>No</SetDynamicOnlyFlag>
+      <SetLoaderTag></SetLoaderTag>
+      <StackSize></StackSize>
+      <StripSymbolStrings>No</StripSymbolStrings>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </PostLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Source\Vision\Runtime\Common\VisSampleAppCallbacks.cpp">
+        <PrecompiledHeader>NotUsing</PrecompiledHeader>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="TransitionBarbarian.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="TransitionBarbarian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="..\..\..\..\..\Source\Vision\Runtime\EnginePlugins\EnginePluginsImport.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="$(ANDROID_NDK_ROOT)\sources\android\native_app_glue\android_native_app_glue.c">
+        <CompileAsWinRT>false</CompileAsWinRT>
+        <AdditionalOptions> </AdditionalOptions>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ModelMerging.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="KeyControlledTransitionBarbarian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="KeyControlledTransitionBarbarian.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUI\MenuSystem.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="MergedModelFactory.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ModelMergingPCH.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GUI\MenuSystem.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="MergedModelFactory.hpp">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ModelMergingPCH.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\..\..\..\Source\Vision\Runtime\Common\VisSampleApp.cpp">
+        <PrecompiledHeader>NotUsing</PrecompiledHeader>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+<Import Project="..\..\..\..\..\Build\MSBuild\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev|hkAndroid'">
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|hkAndroid'">
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>

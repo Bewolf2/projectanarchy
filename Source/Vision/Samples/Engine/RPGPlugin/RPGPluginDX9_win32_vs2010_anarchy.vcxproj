@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX9"
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION+PHYSICS_2012+ANIMATION+AI+BEHAVIOR"
+  -->
+        
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug DLL|win32">
+      <Configuration>Debug DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dev DLL|win32">
+      <Configuration>Dev DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release DLL|win32">
+      <Configuration>Release DLL</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D2C9AE4F-0F90-406E-85BA-F9DA83AA90FF}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>DynamicLibrary</Keyword>
+    <RootNamespace></RootNamespace>
+    <ProjectName>RPGPluginDX9</ProjectName>
+    
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'" Label="Configuration">
+    <CharacterSet>MultiByte</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">.vPluginD</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">.vPlugin</TargetExt>
+<TargetExt  Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">.vPlugin</TargetExt>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_anarchy\debug_dll\RPGPluginDX9\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_anarchy\Debug_DLL\DX9\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">RPGPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_anarchy\Debug_DLL\DX9\RPGPlugin.vPluginD</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_anarchy\dev_dll\RPGPluginDX9\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_anarchy\Dev_DLL\DX9\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">RPGPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_anarchy\Dev_DLL\DX9\RPGPlugin.vPlugin</OutputFile>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">..\..\..\..\..\Obj\win32_vs2010_anarchy\release_dll\RPGPluginDX9\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_anarchy\Release_DLL\DX9\</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">RPGPlugin</TargetName>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">..\..\..\..\..\Bin\win32_vs2010_anarchy\Release_DLL\DX9\RPGPlugin.vPlugin</OutputFile>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>true</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/RPGPlugin/Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)RPGPlugin.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY;PROFILING;_VISION_WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_VR_DX9;USE_HAVOK;RPG_PLUGIN_EXPORTS;ANIMATIONMODULE_IMPORTS;VHAVOKMODULE_IMPORTS;VHAVOKAIMODULE_IMPORTS;VHAVOKBEHAVIORMODULE_IMPORTS;SCENEMODULE_IMPORTS;GUI_ENGINEPLUGIN_IMPORTS;EFFECTSMODULE_IMPORTS;FXPLAYER_RENDER_DIRECT3D;FMODENGINEPLUGIN_IMPORTS;HK_CONFIG_SIMD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName></ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>lua100d.lib;fmodexL_vc.lib;fmod_event_netL.lib;d3d9.lib;d3dx9.lib;BaseD.lib;VisionD.lib;VisionEnginePluginD.lib;vHavokD.lib;vHavokAiD.lib;vHavokBehaviorD.lib;vFmodEnginePluginD.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkpConstraint.lib;hkaPhysics2012Bridge.lib;hkaInternal.lib;hkaAnimation.lib;hkbBehavior.lib;hkbInternal.lib;hkbUtilities.lib;hkbPhysics2012Bridge.lib;hkbScript.lib;hkaiPathfinding.lib;hkaiInternal.lib;hkaiVisualize.lib;hkaiSpatialAnalysis.lib;hkaiPhysics2012Bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_anarchy\debug_dll;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib;$(DXSDK_DIR)/Lib/x86;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/win</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>lua100d.lib;fmodexL_vc.lib;fmod_event_netL.lib;d3d9.lib;d3dx9.lib;BaseD.lib;VisionD.lib;VisionEnginePluginD.lib;vHavokD.lib;vHavokAiD.lib;vHavokBehaviorD.lib;vFmodEnginePluginD.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkpConstraint.lib;hkaPhysics2012Bridge.lib;hkaInternal.lib;hkaAnimation.lib;hkbBehavior.lib;hkbInternal.lib;hkbUtilities.lib;hkbPhysics2012Bridge.lib;hkbScript.lib;hkaiPathfinding.lib;hkaiInternal.lib;hkaiVisualize.lib;hkaiSpatialAnalysis.lib;hkaiPhysics2012Bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_anarchy\debug_dll;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib;$(DXSDK_DIR)/Lib/x86;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/win</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\..\..\..\..\Lib\win32_vs2010_anarchy\debug_dll\$(TargetName)D.lib</ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+     <IgnoreSpecificDefaultLibraries>libc.lib;libcmtd.lib;</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <SDLCheck>true</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers></OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/RPGPlugin/Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)RPGPlugin.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY;PROFILING;_VISION_WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_VR_DX9;USE_HAVOK;RPG_PLUGIN_EXPORTS;ANIMATIONMODULE_IMPORTS;VHAVOKMODULE_IMPORTS;VHAVOKAIMODULE_IMPORTS;VHAVOKBEHAVIORMODULE_IMPORTS;SCENEMODULE_IMPORTS;GUI_ENGINEPLUGIN_IMPORTS;EFFECTSMODULE_IMPORTS;FXPLAYER_RENDER_DIRECT3D;FMODENGINEPLUGIN_IMPORTS;HK_CONFIG_SIMD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName></ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>lua100.lib;fmodex_vc.lib;fmod_event_net.lib;d3d9.lib;d3dx9.lib;Base.lib;Vision.lib;VisionEnginePlugin.lib;vHavok.lib;vHavokAi.lib;vHavokBehavior.lib;vFmodEnginePlugin.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkpConstraint.lib;hkaPhysics2012Bridge.lib;hkaInternal.lib;hkaAnimation.lib;hkbBehavior.lib;hkbInternal.lib;hkbUtilities.lib;hkbPhysics2012Bridge.lib;hkbScript.lib;hkaiPathfinding.lib;hkaiInternal.lib;hkaiVisualize.lib;hkaiSpatialAnalysis.lib;hkaiPhysics2012Bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_anarchy\dev_dll;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib;$(DXSDK_DIR)/Lib/x86;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/win</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>lua100.lib;fmodex_vc.lib;fmod_event_net.lib;d3d9.lib;d3dx9.lib;Base.lib;Vision.lib;VisionEnginePlugin.lib;vHavok.lib;vHavokAi.lib;vHavokBehavior.lib;vFmodEnginePlugin.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkpConstraint.lib;hkaPhysics2012Bridge.lib;hkaInternal.lib;hkaAnimation.lib;hkbBehavior.lib;hkbInternal.lib;hkbUtilities.lib;hkbPhysics2012Bridge.lib;hkbScript.lib;hkaiPathfinding.lib;hkaiInternal.lib;hkaiVisualize.lib;hkaiSpatialAnalysis.lib;hkaiPhysics2012Bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_anarchy\dev_dll;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib;$(DXSDK_DIR)/Lib/x86;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/win</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\..\..\..\..\Lib\win32_vs2010_anarchy\dev_dll\$(TargetName).lib</ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences></OptimizeReferences>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+     <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">
+    
+    
+    
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(DXSDK_DIR)/Include;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc;</AdditionalIncludeDirectories>
+      <AdditionalOptions></AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <SDLCheck>false</SDLCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings></DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnablePREfast></EnablePREfast>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Vision/Samples/Engine/RPGPlugin/Precompiled.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)RPGPlugin.pch</PrecompiledHeaderOutputFile>
+      <PreprocessorDefinitions>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY;PROFILING;_VISION_WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_VR_DX9;USE_HAVOK;RPG_PLUGIN_EXPORTS;ANIMATIONMODULE_IMPORTS;VHAVOKMODULE_IMPORTS;VHAVOKAIMODULE_IMPORTS;VHAVOKBEHAVIORMODULE_IMPORTS;SCENEMODULE_IMPORTS;GUI_ENGINEPLUGIN_IMPORTS;EFFECTSMODULE_IMPORTS;FXPLAYER_RENDER_DIRECT3D;FMODENGINEPLUGIN_IMPORTS;HK_CONFIG_SIMD=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <UndefinePreprocessorDefinitions></UndefinePreprocessorDefinitions>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAsManaged>false</CompileAsManaged>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <ResourceOutputFileName></ResourceOutputFileName>
+      <AdditionalIncludeDirectories>$(IntDir)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Lib>
+      <IgnoreAllDefaultLibraries></IgnoreAllDefaultLibraries>
+      <AdditionalDependencies>lua100.lib;fmodex_vc.lib;fmod_event_net.lib;d3d9.lib;d3dx9.lib;Base.lib;Vision.lib;VisionEnginePlugin.lib;vHavok.lib;vHavokAi.lib;vHavokBehavior.lib;vFmodEnginePlugin.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkpConstraint.lib;hkaPhysics2012Bridge.lib;hkaInternal.lib;hkaAnimation.lib;hkbBehavior.lib;hkbInternal.lib;hkbUtilities.lib;hkbPhysics2012Bridge.lib;hkbScriptRelease.lib;hkaiPathfinding.lib;hkaiInternal.lib;hkaiVisualize.lib;hkaiSpatialAnalysis.lib;hkaiPhysics2012Bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_anarchy\release_dll;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib;$(DXSDK_DIR)/Lib/x86;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/win</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>lua100.lib;fmodex_vc.lib;fmod_event_net.lib;d3d9.lib;d3dx9.lib;Base.lib;Vision.lib;VisionEnginePlugin.lib;vHavok.lib;vHavokAi.lib;vHavokBehavior.lib;vFmodEnginePlugin.lib;hkInternal.lib;hkGeometryUtilities.lib;hkVisualize.lib;hkSerialize.lib;hkCompat.lib;hkSceneData.lib;hkBase.lib;hkcdCollide.lib;hkcdInternal.lib;hkpUtilities.lib;hkpVehicle.lib;hkpDynamics.lib;hkpCollide.lib;hkpInternal.lib;hkpConstraintSolver.lib;hkpConstraint.lib;hkaPhysics2012Bridge.lib;hkaInternal.lib;hkaAnimation.lib;hkbBehavior.lib;hkbInternal.lib;hkbUtilities.lib;hkbPhysics2012Bridge.lib;hkbScriptRelease.lib;hkaiPathfinding.lib;hkaiInternal.lib;hkaiVisualize.lib;hkaiSpatialAnalysis.lib;hkaiPhysics2012Bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Lib\win32_vs2010_anarchy\release_dll;$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib;$(DXSDK_DIR)/Lib/x86;$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/lib/win</AdditionalLibraryDirectories>
+      <AdditionalOptions> /ignore:4221</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\..\..\..\..\Lib\win32_vs2010_anarchy\release_dll\$(TargetName).lib</ImportLibrary>
+      <AssemblyDebug></AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <ManifestFile>$(IntDir)Manifest$(TargetExt).intermediate.manifest</ManifestFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+     <IgnoreSpecificDefaultLibraries>libc.lib;libcmt.lib;</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="HighlightableComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GameManager.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionDie.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerUIDialog.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ManaPickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="MeshTrailEffectComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="InventoryItem.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="PlayerCharacter.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="InventoryItem.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="HighlightableComponentManager.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="FloatingEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Pickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Precompiled.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionMeleeAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionBlock.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Renderer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionDodge.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="AiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="InventoryPickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="MeleeGuardian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionDodge.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="MeleeGuardianAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="InteractableComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="InventoryPickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="PlayerSpawnPoint.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="InventoryHandler.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AttackableComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Precompiled.cpp">
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">Create</PrecompiledHeader>
+        <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">Create</PrecompiledHeader>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionHavokBehaviorWorldListener.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionUserMessages.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CharacterActionData.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="DummyEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionHandler.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CharacterStats.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Trigger.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionMove.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionMeleeAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="RangedGuardianAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="LevelInfo.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GUIHud_VisionGUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VisionEffectHelper.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerSpawnPoint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <None Include="VisionHavokConversion.inl"><DeploymentContent>False</DeploymentContent></None>
+    <ClCompile Include="VisionHavokBehaviorHelper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="MeleeGuardian.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GameManager.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Trigger.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Projectile.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionTimer.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerCharacterSynchronizationGroup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="BossAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionRangedAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionGameDebug.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ProjectileHealing.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="DestructibleEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="HighlightableComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="RangedGuardian.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AiCharacter.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionSpawn.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionSerializer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionChallenge.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionPowerAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="HealthPickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Plugin.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="HealthPickup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="MeleeGuardianAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Action.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="GUIManager.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="DestructibleEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="GUIManager_VisionGUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="CharacterActionData.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="CasterGuardianAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionSpawn.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUIHud_VisionGUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Action.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="AttackableComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="PlayerCharacter.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionHavokBehaviorWorldListener.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="PlayerCharacterSynchronizationGroup.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="AiSpawnPoint.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Explosion.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="PlayerUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUIManager.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="MeshTrailEffectComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="RangedGuardian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionTimer.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="DependencyHelper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="DamageableEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="DependencyHelper.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Character.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AiSpawnPoint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Plugin.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionAttackBase.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionPowerAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="CasterGuardian.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="LevelInfo.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="GUIMinimap_VisionGUI.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionAoeAttack.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionHandler.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="InteractableComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="AiCharacter.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Effect.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUIMinimap_VisionGUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionGameDebug.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionHavokBehaviorHelper.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionChallenge.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="BossAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CharacterStats.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CasterGuardian.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Explosion.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionSerializer.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ManaPickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="PlayerControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Character.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="PlayerUIDialog.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionAoeAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Effect.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="SpawnPoint.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="InventoryHandler.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionAttackBase.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Attachment.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Boss.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="ActionHeal.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="DamageableEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="BaseComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="RangedGuardianAiControllerComponent.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionRangedAttack.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Renderer.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="HighlightableComponentManager.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="DummyEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="BaseEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionDie.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="SpawnPoint.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Pickup.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionEffectHelper.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionModuleTypes.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="GUIManager_VisionGUI.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionHavokConversion.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="ActionHeal.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Boss.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Attachment.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ProjectileHealing.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="ActionMove.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="ActionBlock.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="BaseComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="CasterGuardianAiControllerComponent.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="BaseEntity.cpp">
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Projectile.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="FloatingEntity.h">
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dev DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release DLL|win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisInputAssembly>$(OutputFile)</CodeAnalysisInputAssembly>
+</PropertyGroup>
+<PropertyGroup>
+</PropertyGroup>
+</Project>

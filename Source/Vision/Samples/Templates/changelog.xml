@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+
+<!DOCTYPE changelog SYSTEM "../../../../Build/Vision/changelog.dtd">
+
+<?xml-stylesheet type="text/xsl" href="../../../../Build/Vision/changelog.xsl" ?>
+
+<changelog name="ProjectTemplates">
+
+  <version major="2013" minor="1" fix="0">
+    <added>Added template project for Android. [HS#9909]</added>
+    <changed>Merged templates into only one template project.</changed>
+  </version> 
+
+  <version major="2012" minor="2" fix="0">
+    <changed>Upgraded project templates to new structure.</changed>
+  </version> 
+
+  <version major="8" minor="2" fix="6">
+    <changed>Updated bin folder readme.txt to explain the different batch files.</changed>
+  </version> 
+
+  <version major="8" minor="2" fix="4">
+    <changed>Re-exported scenes with 8.2 vForge</changed>
+    <changed>Extracted the GamePlugin IMPEXP macro to separate header file, so that other projects can correctly import classes and data from the plugin</changed>
+  </version> 
+
+  <version major="8" minor="2" fix="2">
+    <changed>Added VS2010 configurations for all projects. Please also take a look at the README.txt in the project folders, since this fix introduced some other minor changes. [HS #4471]</changed>
+    <added>Added changelog, thus starting to track changes.</added>
+  </version> 
+
+</changelog>
+

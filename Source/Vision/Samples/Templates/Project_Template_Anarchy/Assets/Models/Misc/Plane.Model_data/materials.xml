@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="Ground1" diffuse="..\..\Textures\grid01.jpg" transparency="opaque" doublesided="FALSE" specmul="0.552239" specexp="128" parallaxscale="-0.03" parallaxbias="-0.015" lightmapsize="128,128" lightmapgran="0" lightmapID="-1" Lighting="DynamicOnly" ambient="0,0,0,255" sortingkey="0" alphathreshold="0.25" depthwrite="TRUE" zbias="0,0,0" userflags="0" pass="Auto" />
+    </Materials>
+</root>

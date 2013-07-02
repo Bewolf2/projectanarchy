@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectTemplate", "GameApplication\ProjectTemplate_Android_vs2010.vcxproj", "{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068} = {D6A51F68-5A26-4A49-8974-C5DDD63FB068}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlugin", "GamePlugin\GamePlugin_Android_vs2010.vcxproj", "{D6A51F68-5A26-4A49-8974-C5DDD63FB068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|hkAndroid = Debug|hkAndroid
+		Dev|hkAndroid = Dev|hkAndroid
+		Release|hkAndroid = Release|hkAndroid
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{4910E2EB-2888-4829-9FE1-3E7B6FA0ED76}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{D6A51F68-5A26-4A49-8974-C5DDD63FB068}.Release|hkAndroid.Build.0 = Release|hkAndroid
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

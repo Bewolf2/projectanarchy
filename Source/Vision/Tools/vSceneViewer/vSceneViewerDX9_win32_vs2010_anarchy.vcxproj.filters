@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External\Runtime\EnginePlugins">
+        <UniqueIdentifier>16D60179-6D60-4916-6017-16D6017916D6</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Runtime\Common">
+        <UniqueIdentifier>154ADA41-54AD-4115-ADA4-154ADA41154A</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Runtime">
+        <UniqueIdentifier>25C3B14D-5C3B-4D25-3B14-25C3B14D25C3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External">
+        <UniqueIdentifier>283B594B-83B5-4B28-B594-283B594B283B</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vSceneViewerPCH.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vLuaScript.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="SceneConfig.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="..\..\Runtime\EnginePlugins\EnginePluginsImport.hpp">
+        <Filter>External\Runtime\EnginePlugins</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ResourceCompile Include="vSceneViewer.rc">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ResourceCompile>
+    <ClCompile Include="vSceneViewerPCH.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\Runtime\Common\VisSampleAppCallbacks.cpp">
+        <Filter>External\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vSceneViewer.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vSceneViewer.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\Runtime\Common\VisSampleApp.cpp">
+        <Filter>External\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="resource.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+
+  </ItemGroup>
+</Project>

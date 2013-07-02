@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External\Source\Vision\Runtime\Common">
+        <UniqueIdentifier>2032AE82-032A-4220-2AE8-2032AE822032</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision">
+        <UniqueIdentifier>11FD8A92-1FD8-4211-D8A9-11FD8A9211FD</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision\Runtime">
+        <UniqueIdentifier>5E733E32-E733-425E-33E3-5E733E325E73</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision\Runtime\EnginePlugins">
+        <UniqueIdentifier>AEE910AA-E910-4EE9-0AAE-910AAEE910AA</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source">
+        <UniqueIdentifier>4F99A41B-F99A-4B4F-9A41-4F99A41B4F99</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External">
+        <UniqueIdentifier>283B594B-83B5-4B28-B594-283B594B283B</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Source\Vision\Runtime\Common\VisSampleApp.cpp">
+        <Filter>External\Source\Vision\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\..\..\..\Source\Vision\Runtime\Common\VisSampleAppCallbacks.cpp">
+        <Filter>External\Source\Vision\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="_SecurityCamEntity.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="..\..\..\..\..\Source\Vision\Runtime\EnginePlugins\EnginePluginsImport.hpp">
+        <Filter>External\Source\Vision\Runtime\EnginePlugins</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="_SecurityCamEntity.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="RenderToTexturePCH.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="RenderToTexture.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="RenderToTexturePCH.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+
+  </ItemGroup>
+</Project>

@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="FILE" Filename="Data\Models\Misc\Sphere.Model_data\materials.xml" Size="687" />
+        <Resource Manager="Textures" Filename="Data\Textures\blubber.dds" CustomInt="1,0" Size="43704" />
+        <Resource Manager="EffectLibs" Filename="shaders\DeferredShading.ShaderLib" Size="113092" />
+        <Resource Manager="Models" Filename="Data\Models\Misc\Sphere.Model" CustomInt="1" Size="4060" />
+    </Resources>
+</root>

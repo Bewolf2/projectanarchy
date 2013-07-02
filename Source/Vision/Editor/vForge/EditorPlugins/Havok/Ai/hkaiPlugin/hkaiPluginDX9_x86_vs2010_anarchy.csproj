@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX9"
+    SOLUTION_FOLDER = "Vision/Editor/vForge/EditorPlugins"
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "AI+PHYSICS_2012+VISION"
+  -->
+        
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Dev</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB597B94-5615-4D6C-924B-3B80369FB618}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HavokAiEditorPlugin</RootNamespace>
+    <AssemblyName>HavokAiEditorPlugin.EditorPlugin</AssemblyName>
+    <ApplicationIcon> </ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PlatformToolset>v100</PlatformToolset>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\debug_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE; DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\dev_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\release_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HavokAiPanel.Designer.cs">
+        <DependentUpon>HavokAiPanel.cs</DependentUpon>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+        <DependentUpon>Resources.resx</DependentUpon>
+        <AutoGen>True</AutoGen>
+        <DesignTime>True</DesignTime>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshSeedPointShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokAiTest.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="HavokAiPanel.resx">
+        <DependentUpon>HavokAiPanel.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="HavokNavMeshShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshTestPathShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokAiEditorPlugin.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshGlobalSettings.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshCarverShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokAiPanel.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+        <SubType>Designer</SubType>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+        <Generator>ResXFileCodeGenerator</Generator>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="AssemblyInfo.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshGlobalSettingsActions.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokNavMeshLocalSettingsShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+  </ItemGroup>
+  <ItemGroup>
+            <Reference Include="nunit.core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.framework"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.util"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Data"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing.Design"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Windows.Forms"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.XML"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    
+            <Reference Include="CSharpFramework.dll"><HintPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\CSharpFramework.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="DockPanel.dll"><HintPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\DockPanel.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="HavokAiManaged.dll"><HintPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\HavokAiManaged.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="ManagedFramework.dll"><HintPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\ManagedFramework.dll</HintPath><Private>False</Private></Reference>
+    <ProjectReference Include="..\..\..\VisionPlugin\VisionEditorPlugin\VisionEditorPluginDX9_x86_vs2010_anarchy.csproj">
+        <Project>{944C2E99-6C46-439E-8AD2-B4503C8A8574}</Project>
+        <Name>VisionEditorPlugin.EditorPlugin</Name>
+        <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\VisionPlugin\VisionManaged\VisionManagedDX9_win32_vs2010_anarchy.vcxproj">
+        <Project>{4A6A0572-F227-4288-829B-A7D1A991341D}</Project>
+        <Name>VisionManaged</Name>
+        <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\TerrainPlugin\TerrainBase\TerrainBaseDX9_x86_vs2010_anarchy.csproj">
+        <Project>{653BCB9B-BC3A-45AE-9201-1DBC49A2B8E6}</Project>
+        <Name>TerrainBase</Name>
+        <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\TerrainPlugin\TerrainEditorPlugin\TerrainEditorPluginDX9_x86_vs2010_anarchy.csproj">
+        <Project>{AB717DD8-A538-11DA-8BDE-F66BAD1E3F3A}</Project>
+        <Name>TerrainEditorPlugin.EditorPlugin</Name>
+        <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\TerrainPlugin\TerrainManaged\TerrainManagedDX9_win32_vs2010_anarchy.vcxproj">
+        <Project>{B050A360-A538-11DA-8BDE-F66BAD1E3F3A}</Project>
+        <Name>TerrainManaged</Name>
+        <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=" " />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<PropertyGroup>
+    <PostBuildEvent></PostBuildEvent>
+</PropertyGroup>
+</Project>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX9"
+    
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION"
+  -->
+        
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Dev</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92753E30-CD41-497B-A04F-B25BA16E6044}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>View2DShapePlugin</RootNamespace>
+    <AssemblyName>View2DShapePlugin.EditorPlugin</AssemblyName>
+    <ApplicationIcon> </ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PlatformToolset>v100</PlatformToolset>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\debug_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE; DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\dev_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\release_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="View2DShapePlugin.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="View2DShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="AssemblyInfo.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+  </ItemGroup>
+  <ItemGroup>
+            <Reference Include="System"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Data"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing.Design"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Windows.Forms"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Xml"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    
+            <Reference Include="CSharpFramework.dll"><HintPath>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\CSharpFramework.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="ManagedBase.dll"><HintPath>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\ManagedBase.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="ManagedFramework.dll"><HintPath>..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\ManagedFramework.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=" " />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<PropertyGroup>
+    <PostBuildEvent></PostBuildEvent>
+</PropertyGroup>
+</Project>

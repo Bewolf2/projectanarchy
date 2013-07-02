@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Lua">
+        <UniqueIdentifier>45DB356F-5DB3-4F45-B356-45DB356F45DB</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VFmodSoundObject.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VFmodSoundResource.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VFmodReverb.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VFmodSoundObject.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="VFmodAnimationEventSoundTrigger.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VFmodManager.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VFmodAnimationEventSoundTrigger.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VFmodCollisionMeshInstance.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="VFmodIncludes.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <CustomBuild Include="Lua\FmodLuaModule.i">
+        <Filter>Lua</Filter>
+        <DeploymentContent>False</DeploymentContent></CustomBuild>
+    <ClCompile Include="VFmodCollisionMeshInstance.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VFmodReverb.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="FmodEnginePlugin.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VFmodEventGroup.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VFmodManager.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <Compile Include="Lua\VFmodSoundObject.i">
+        <Filter>Lua</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClCompile Include="VFmodEvent.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="Lua\FmodLuaModule_wrapper.cpp">
+        <Filter>Lua</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <Compile Include="Lua\VFmodManager.i">
+        <Filter>Lua</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClInclude Include="VFmodEvent.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <Compile Include="Lua\VFmodEvent.i">
+        <Filter>Lua</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <ClInclude Include="VFmodEventGroup.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="FmodEnginePlugin.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="VFmodSoundResource.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+
+  </ItemGroup>
+</Project>

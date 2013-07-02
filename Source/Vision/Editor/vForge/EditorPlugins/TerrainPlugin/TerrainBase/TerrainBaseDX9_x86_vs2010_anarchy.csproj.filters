@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dialogs">
+        <UniqueIdentifier>5C9C6384-C9C6-445C-C638-5C9C63845C9C</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Terrain">
+        <UniqueIdentifier>3C529794-C529-443C-2979-3C5297943C52</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Actions">
+        <UniqueIdentifier>2C798412-C798-422C-9841-2C7984122C79</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="OLD">
+        <UniqueIdentifier>7585DD24-585D-4475-5DD2-7585DD247585</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Editing">
+        <UniqueIdentifier>4C31C2C5-C31C-454C-1C2C-4C31C2C54C31</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Config">
+        <UniqueIdentifier>65E3871C-5E38-4C65-3871-65E3871C65E3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Editing\DecorationModelResource.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\ITerrainFilter.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\DetailTextureResource.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="OLD\HeightFieldGeneratorShape.cs">
+        <Filter>OLD</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\TerrainBrush.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\TerrainSelection.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainConfigDlg.Designer.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="AssemblyInfo.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Terrain\ISectorCallback.cs">
+        <Filter>Terrain</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Config\TerrainConfig.cs">
+        <Filter>Config</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\IValueProvider.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Actions\TerrainChangedBaseAction.cs">
+        <Filter>Actions</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\IHeightmapFilter.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\IHeightmapImporter.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\Cursor3DProperties.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\TerrainConfigDlg.resx">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Editing\IDecorationFilter.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainConfigDlg.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+
+  </ItemGroup>
+</Project>

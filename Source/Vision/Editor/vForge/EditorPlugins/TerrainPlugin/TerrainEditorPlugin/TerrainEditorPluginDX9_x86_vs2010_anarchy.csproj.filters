@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Filter">
+        <UniqueIdentifier>21B45750-1B45-4021-4575-21B4575021B4</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Tests">
+        <UniqueIdentifier>3F55A322-F55A-423F-5A32-3F55A3223F55</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Dialogs">
+        <UniqueIdentifier>5C9C6384-C9C6-445C-C638-5C9C63845C9C</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Contexts">
+        <UniqueIdentifier>5FEFB5C8-FEFB-485F-FB5C-5FEFB5C85FEF</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Actions">
+        <UniqueIdentifier>2C798412-C798-422C-9841-2C7984122C79</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Shapes">
+        <UniqueIdentifier>5D2E24D0-D2E2-405D-E24D-5D2E24D05D2E</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Controls">
+        <UniqueIdentifier>3DC30E8E-DC30-4E3D-30E8-3DC30E8E3DC3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Editing">
+        <UniqueIdentifier>4C31C2C5-C31C-454C-1C2C-4C31C2C54C31</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Properties">
+        <UniqueIdentifier>33A753D3-A753-43A7-3D33-753D33A753D3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\ImportSplitTexturesDlg.Designer.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Filter\SlopeDetailTexturesFilter.cs">
+        <Filter>Filter</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Controls\BrushListCtrl.cs">
+        <Filter>Controls</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\ApplyHeightmapFilterDlg.Designer.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\TerrainDirectionalLight.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="AssemblyInfo.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainEditorPanel.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\TerrainVisibilityZoneShape.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\TerrainConfigDlg.resx">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Actions\PaintDecorationAction.cs">
+        <Filter>Actions</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Filter\TerrainMeshExport.cs">
+        <Filter>Filter</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Actions\PaintDetailTextureAction.cs">
+        <Filter>Actions</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Filter\DefaultHeightmapImporters.cs">
+        <Filter>Filter</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\TerrainPickHandler.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Actions\PaintHeightmapAction.cs">
+        <Filter>Actions</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\DetailTextureComboBoxEditor.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\TerrainShape.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainCreationDlg.Designer.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ApplyHeightmapFilterDlg.resx">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Controls\BrushListCtrl.Designer.cs">
+        <Filter>Controls</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Filter\DefaultDecorationFilters.cs">
+        <Filter>Filter</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="TerrainEditor.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\TerrainEditorPanel.resx">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Contexts\DecorationEditingContext.cs">
+        <Filter>Contexts</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainEditorPanel.Designer.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\ImportSplitTexturesDlg.resx">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="TerrainEditorPlugin.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Filter\SimpleHeightmapFilters.cs">
+        <Filter>Filter</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\TerrainSelectionShape.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Controls\BrushListCtrl.resx">
+        <Filter>Controls</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Actions\AddDetailTextureAction.cs">
+        <Filter>Actions</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\ITerrainObject.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Contexts\TerrainEditingBaseContext.cs">
+        <Filter>Contexts</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainConfigDlg.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\TerrainCreationDlg.resx">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Contexts\DetailTextureEditingContext.cs">
+        <Filter>Contexts</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tests\TerrainTests.cs">
+        <Filter>Tests</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Contexts\HeightmapEditingContext.cs">
+        <Filter>Contexts</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainConfigDlg.Designer.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Filter\ImportWeightmapFilter.cs">
+        <Filter>Filter</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\TerrainCreationDlg.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Editing\TerrainConfigEditor.cs">
+        <Filter>Editing</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Actions\AddDecorationModelAction.cs">
+        <Filter>Actions</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\ApplyHeightmapFilterDlg.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\ImportSplitTexturesDlg.cs">
+        <Filter>Dialogs</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+
+  </ItemGroup>
+</Project>

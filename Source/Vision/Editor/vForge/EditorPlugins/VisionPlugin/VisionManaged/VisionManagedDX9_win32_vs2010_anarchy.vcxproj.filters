@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="LightmapTool">
+        <UniqueIdentifier>13388180-3388-4013-8818-133881801338</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="EngineInstances">
+        <UniqueIdentifier>485DF57F-85DF-4F48-DF57-485DF57F485D</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Tools">
+        <UniqueIdentifier>615AD5FC-15AD-4C61-AD5F-615AD5FC615A</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EngineInstances\EngineInstanceLightGridIndicator.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstancePath.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceBillboardGroup.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceStaticMeshGroup.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceMirror.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceLightGridDetailBox.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceStaticMesh.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceCustomVolume.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceProjector.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="Tools\ColorGradingTool.hpp">
+        <Filter>Tools</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceClothObject.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceHeightfieldGenerator.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceHeightfieldGenerator.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceEntity.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstancePath.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceLightGridIndicator.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceBillboardGroup.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceVisibilityObject.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="VisionManagedPCH.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AssemblyInfo.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceMirror.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="VisionManaged.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceDecorationGroup.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="LightmapTool\LightmapManager.hpp">
+        <Filter>LightmapTool</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstancePathCamera.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceClothObject.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceRenderTarget.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstancePrefab.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceCustomVolume.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceVisibilityObject.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Tools\ColorGradingTool.cpp">
+        <Filter>Tools</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceTriggerBox.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="VisionManagedPCH.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstancePrefab.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="LightmapTool\LightmapManager.cpp">
+        <Filter>LightmapTool</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceDecorationGroup.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceParticleGroup.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstancePathCamera.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceParticleGroup.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceProjector.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstancePostprocessingEffect.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceStaticMeshGroup.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstancePostprocessingEffect.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceStaticMesh.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceDynLight.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceDynLight.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceEntity.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceRenderTarget.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceTriggerBox.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceLightGridDetailBox.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+
+  </ItemGroup>
+</Project>

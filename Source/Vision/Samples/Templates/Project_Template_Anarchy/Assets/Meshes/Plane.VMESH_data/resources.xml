@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="Textures" Filename="Data\Textures\grid01.jpg" CustomInt="1,0" Size="4194304" />
+        <Resource Manager="EffectLibs" Filename="shaders\DeferredShading.ShaderLib" Size="113092" />
+        <Resource Manager="FILE" Filename="Data\Meshes\Plane.VMESH_data\materials.xml" Size="688" />
+        <Resource Manager="Static Meshes" Filename="Data\Meshes\Plane.VMESH" CustomInt="1" Size="388" />
+    </Resources>
+</root>

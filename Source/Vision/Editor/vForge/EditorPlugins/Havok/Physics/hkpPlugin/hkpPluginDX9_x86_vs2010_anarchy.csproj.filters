@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shapes">
+        <UniqueIdentifier>5D2E24D0-D2E2-405D-E24D-5D2E24D05D2E</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Tests">
+        <UniqueIdentifier>3F55A322-F55A-423F-5A32-3F55A3223F55</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Properties">
+        <UniqueIdentifier>33A753D3-A753-43A7-3D33-753D33A753D3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\HavokConstraintChainShape.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="HavokPhysicsPanel.resx">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="HavokPhysicsPanel.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Tests\HavokConstraintShapeTest.cs">
+        <Filter>Tests</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\HavokConstraintLinkSource.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="AssemblyInfo.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\HavokConstraintShape.cs">
+        <Filter>Shapes</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokEditorPlugin.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="HavokPhysicsPanel.Designer.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+
+  </ItemGroup>
+</Project>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX9"
+    SOLUTION_FOLDER = "Vision/Editor/vForge/EditorPlugins"
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "ANIMATION+BEHAVIOR+PHYSICS_2012+VISION"
+  -->
+        
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Dev</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{02DE81D9-F287-4D72-B3CD-80C522365B4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HavokBehaviorEditorPlugin</RootNamespace>
+    <AssemblyName>HavokBehaviorEditorPlugin.EditorPlugin</AssemblyName>
+    <ApplicationIcon> </ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PlatformToolset>v100</PlatformToolset>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\debug_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE; DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\dev_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\release_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="HavokBehaviorEditorPlugin.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="AssemblyInfo.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+  </ItemGroup>
+  <ItemGroup>
+            <Reference Include="nunit.core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.framework"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.util"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Data"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Windows.Forms"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.XML"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    
+            <Reference Include="CSharpFramework.dll"><HintPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\CSharpFramework.dll</HintPath><Private>False</Private></Reference>
+    <ProjectReference Include="..\hkbManaged\hkbManagedDX9_win32_vs2010_anarchy.vcxproj">
+        <Project>{77A6994D-C01A-453B-924B-98301D17ED89}</Project>
+        <Name>HavokBehaviorManaged</Name>
+        <Private>False</Private>
+    </ProjectReference>
+    
+            <Reference Include="ManagedFramework.dll"><HintPath>..\..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\ManagedFramework.dll</HintPath><Private>False</Private></Reference>
+    <ProjectReference Include="..\..\..\VisionPlugin\VisionEditorPlugin\VisionEditorPluginDX9_x86_vs2010_anarchy.csproj">
+        <Project>{944C2E99-6C46-439E-8AD2-B4503C8A8574}</Project>
+        <Name>VisionEditorPlugin.EditorPlugin</Name>
+        <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\VisionPlugin\VisionManaged\VisionManagedDX9_win32_vs2010_anarchy.vcxproj">
+        <Project>{4A6A0572-F227-4288-829B-A7D1A991341D}</Project>
+        <Name>VisionManaged</Name>
+        <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=" " />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<PropertyGroup>
+    <PostBuildEvent></PostBuildEvent>
+</PropertyGroup>
+</Project>

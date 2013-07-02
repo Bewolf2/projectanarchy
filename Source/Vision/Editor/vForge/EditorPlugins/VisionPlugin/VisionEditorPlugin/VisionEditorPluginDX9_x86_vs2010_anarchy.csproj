@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--
+    VARIANT = "DX9"
+    SOLUTION_FOLDER = "Vision/Editor/vForge/EditorPlugins"
+    
+    SOURCE_LEVEL = "PUBLIC"
+    REQUIRED_HAVOK_PRODUCTS = "VISION"
+  -->
+        
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Dev</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{944C2E99-6C46-439E-8AD2-B4503C8A8574}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VisionEditorPlugin</RootNamespace>
+    <AssemblyName>VisionEditorPlugin.EditorPlugin</AssemblyName>
+    <ApplicationIcon> </ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PlatformToolset>v100</PlatformToolset>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+  </PropertyGroup>
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\debug_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\debug_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;_DEBUG;HK_DEBUG;HK_DEBUG_SLOW;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE; DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\dev_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\dev_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;HK_DEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release DLL|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutputPath>
+    <OutDir>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9</OutDir>
+    <IntermediateOutputPath>Obj\win32_vs2010_anarchy\release_dll</IntermediateOutputPath>
+    <DefineConstants>_WINDOWS;WIN32;_WIN32;NDEBUG;_CONSOLE;_ALLOW_ITERATOR_DEBUG_LEVEL_MISMATCH;HK_ANARCHY; TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Dialogs\CreateTimeOfDayLightDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tests\CustomVolumeShapeTest.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\RenderTargetShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\PrefabShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\PostProcessingShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\CubemapShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="AssemblyInfo.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\StaticMeshShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\BillboardContextDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\SearchToolDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\BillboardContextDlg.resx">
+        <DependentUpon>BillboardContextDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Shapes\DynLightShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\ColorGradingToolDlg.resx">
+        <DependentUpon>ColorGradingToolDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Shapes\PathCameraShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\LightmapToolDlg.resx">
+        <DependentUpon>LightmapToolDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Shapes\VisibilityObjectShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\CreateCustomVolumeDlg.resx">
+        <DependentUpon>CreateCustomVolumeDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="VisionEditorPlugin.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\BillboardGroupShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\ColorGradingToolDlg.Designer.cs">
+        <DependentUpon>ColorGradingToolDlg.cs</DependentUpon>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\BillboardContextDlg.Designer.cs">
+        <DependentUpon>BillboardContextDlg.cs</DependentUpon>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\MirrorShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tests\ProjectorShapeTest.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tests\StaticMeshTest.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\DecorationInstanceContextDlg.Designer.cs">
+        <DependentUpon>DecorationInstanceContextDlg.cs</DependentUpon>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\LightGridDetailShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\DecorationInstanceContextDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\StaticMeshGroupShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\EntityShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\ParticleGroupShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\CustomVolumeShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\SearchToolDlg.resx">
+        <DependentUpon>SearchToolDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Shapes\ClothObjectShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\LightGridBoxShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+        <SubType>Designer</SubType>
+        <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+        <Generator>ResXFileCodeGenerator</Generator>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Dialogs\LightmapToolDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Contexts\GeometryAssetDropContext.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tool Plugins\ColorGradingToolPlugin.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+        <DependentUpon>Resources.resx</DependentUpon>
+        <AutoGen>True</AutoGen>
+        <DesignTime>True</DesignTime>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\CreateTimeOfDayLightDlg.resx">
+        <DependentUpon>CreateTimeOfDayLightDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Shapes\LightGridIndicatorShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\ProjectorShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\TriggerBoxShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\CreateCustomVolumeDlg.Designer.cs">
+        <DependentUpon>CreateCustomVolumeDlg.cs</DependentUpon>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tool Plugins\LightMapMenuItemPlugin.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\CreateCustomVolumeDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\CreateTimeOfDayLightDlg.Designer.cs">
+        <DependentUpon>CreateTimeOfDayLightDlg.cs</DependentUpon>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\ConstraintShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Shapes\PathShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tests\EntityShapeTest.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Actions\LightmapColorMatrixChangedAction.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Tools\ColorMatrixParams.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Dialogs\ColorGradingToolDlg.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Dialogs\DecorationInstanceContextDlg.resx">
+        <DependentUpon>DecorationInstanceContextDlg.cs</DependentUpon>
+        <SubType>Designer</SubType>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Shapes\CameraPositionShape.cs">
+        <DeploymentContent>False</DeploymentContent></Compile>
+  </ItemGroup>
+  <ItemGroup>
+            <Reference Include="System"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Design"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Data"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Drawing.Design"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.Windows.Forms"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="System.XML"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.core"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.framework"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+            <Reference Include="nunit.util"><HintPath>$(OutputPath)</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    
+            <Reference Include="CSharpFramework.dll"><HintPath>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\CSharpFramework.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="ManagedBase.dll"><HintPath>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\ManagedBase.dll</HintPath><Private>False</Private></Reference>
+    
+            <Reference Include="ManagedFramework.dll"><HintPath>..\..\..\..\..\..\..\Bin\win32_vs2010_anarchy\release_dll\DX9\ManagedFramework.dll</HintPath><Private>False</Private></Reference>
+    <ProjectReference Include="..\VisionManaged\VisionManagedDX9_win32_vs2010_anarchy.vcxproj">
+        <Project>{4A6A0572-F227-4288-829B-A7D1A991341D}</Project>
+        <Name>VisionManaged</Name>
+        <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=" " />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+<PropertyGroup>
+        <PreBuildEvent>
+          
+    xcopy /Y /D /C &quot;$(HAVOK_THIRDPARTY_DIR)\redistsdks\NUnit\2.2.0\nunit.core.dll&quot; &quot;$(TargetDir)&quot;
+    xcopy /Y /D /C &quot;$(HAVOK_THIRDPARTY_DIR)\redistsdks\NUnit\2.2.0\nunit.framework.dll&quot; &quot;$(TargetDir)&quot;
+    xcopy /Y /D /C &quot;$(HAVOK_THIRDPARTY_DIR)\redistsdks\NUnit\2.2.0\nunit.util.dll&quot; &quot;$(TargetDir)&quot;
+    IF NOT EXIST &quot;$(TargetDir)nunit.core.dll&quot; SET ERRORLEVEL=1
+    IF NOT EXIST &quot;$(TargetDir)nunit.framework.dll&quot; SET ERRORLEVEL=1
+    IF NOT EXIST &quot;$(TargetDir)nunit.util.dll&quot; SET ERRORLEVEL=1
+    
+        </PreBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
+</PropertyGroup>
+</Project>

@@ -1,0 +1,158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		
+		/* Describes the files */
+		642688137210013800000080 = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = CharacterLOD.app;sourceTree = BUILT_PRODUCTS_DIR; };
+8609190000000000015884 = { isa = PBXFileReference; path = CharacterLOD.cpp; sourceTree = "<group>"; };
+8370040000000000015886 = { isa = PBXBuildFile; fileRef = 8609190000000000015884; };
+7179450000000000015887 = { isa = PBXFileReference; path = CharacterLODPCH.cpp; sourceTree = "<group>"; };
+8597130000000000015888 = { isa = PBXBuildFile; fileRef = 7179450000000000015887; };
+2273860000000000015889 = { isa = PBXFileReference; path = CharacterLODPCH.h; sourceTree = "<group>"; };
+3993010000000000015890 = { isa = PBXBuildFile; fileRef = 2273860000000000015889; };
+1046990000000000015891 = { isa = PBXFileReference; path = DemoCamera.cpp; sourceTree = "<group>"; };
+6374940000000000015892 = { isa = PBXBuildFile; fileRef = 1046990000000000015891; };
+0257700000000000015893 = { isa = PBXFileReference; path = DemoCamera.hpp; sourceTree = "<group>"; };
+8480520000000000015894 = { isa = PBXBuildFile; fileRef = 0257700000000000015893; };
+5296250000000000015895 = { isa = PBXFileReference; path = EntityLODComponent.cpp; sourceTree = "<group>"; };
+1135400000000000015896 = { isa = PBXBuildFile; fileRef = 5296250000000000015895; };
+6552440000000000015897 = { isa = PBXFileReference; path = EntityLODComponent.hpp; sourceTree = "<group>"; };
+9685560000000000015898 = { isa = PBXBuildFile; fileRef = 6552440000000000015897; };
+3792760000000000015899 = { isa = PBXFileReference; path = LODObject.cpp; sourceTree = "<group>"; };
+7217710000000000015900 = { isa = PBXBuildFile; fileRef = 3792760000000000015899; };
+0099360000000000015901 = { isa = PBXFileReference; path = LODObject.h; sourceTree = "<group>"; };
+5050810000000000015902 = { isa = PBXBuildFile; fileRef = 0099360000000000015901; };
+6051330000000000015903 = { isa = PBXFileReference; path = MenuSystem.cpp; sourceTree = "<group>"; };
+1677030000000000015905 = { isa = PBXBuildFile; fileRef = 6051330000000000015903; };
+9731840000000000015906 = { isa = PBXFileReference; path = MenuSystem.hpp; sourceTree = "<group>"; };
+5667620000000000015907 = { isa = PBXBuildFile; fileRef = 9731840000000000015906; };
+9764590000000000015908 = { isa = PBXFileReference; path = VisSampleApp.cpp; sourceTree = "<group>"; };
+6825760000000000015913 = { isa = PBXBuildFile; fileRef = 9764590000000000015908; };
+9035320000000000015914 = { isa = PBXFileReference; path = EnginePluginsImport.hpp; sourceTree = "<group>"; };
+5008120000000000015916 = { isa = PBXBuildFile; fileRef = 9035320000000000015914; };
+2656630000000000015917 = { isa = PBXFileReference; path = VisSampleAppCallbacks.cpp; sourceTree = "<group>"; };
+5450200000000000015918 = { isa = PBXBuildFile; fileRef = 2656630000000000015917; };
+9466730000000000015919 = { isa = PBXFileReference; path = VisAppDelegateIOS.h; sourceTree = "<group>"; };
+6054840000000000015921 = { isa = PBXBuildFile; fileRef = 9466730000000000015919; };
+2517380000000000015922 = { isa = PBXFileReference; path = VisAppDelegateIOS.m; sourceTree = "<group>"; };
+1232720000000000015923 = { isa = PBXBuildFile; fileRef = 2517380000000000015922; };
+5251740000000000015924 = { isa = PBXFileReference; path = VisEAGLViewIOS.h; sourceTree = "<group>"; };
+1243420000000000015925 = { isa = PBXBuildFile; fileRef = 5251740000000000015924; };
+5697810000000000015926 = { isa = PBXFileReference; path = VisEAGLViewIOS.m; sourceTree = "<group>"; };
+9334920000000000015927 = { isa = PBXBuildFile; fileRef = 5697810000000000015926; };
+0800160000000000015928 = { isa = PBXFileReference; path = VisMainIOS.m; sourceTree = "<group>"; };
+3707460000000000015929 = { isa = PBXBuildFile; fileRef = 0800160000000000015928; };
+0067980000000000015930 = { isa = PBXFileReference; path = VisViewControllerIOS.h; sourceTree = "<group>"; };
+6728210000000000015931 = { isa = PBXBuildFile; fileRef = 0067980000000000015930; };
+5075280000000000015932 = { isa = PBXFileReference; path = VisViewControllerIOS.m; sourceTree = "<group>"; };
+2729550000000000015933 = { isa = PBXBuildFile; fileRef = 5075280000000000015932; };
+9946290000000000015934 = { isa = PBXFileReference; path = VisAppSettings.h; sourceTree = "<group>"; };
+4529030000000000015935 = { isa = PBXBuildFile; fileRef = 9946290000000000015934; };
+9764590000000000015908 = { isa = PBXFileReference; path = VisSampleApp.cpp; sourceTree = "<group>"; };
+5085810000000000015936 = { isa = PBXBuildFile; fileRef = 9764590000000000015908; };
+9035320000000000015914 = { isa = PBXFileReference; path = EnginePluginsImport.hpp; sourceTree = "<group>"; };
+8883450000000000015937 = { isa = PBXBuildFile; fileRef = 9035320000000000015914; };
+2656630000000000015917 = { isa = PBXFileReference; path = VisSampleAppCallbacks.cpp; sourceTree = "<group>"; };
+1228240000000000015938 = { isa = PBXBuildFile; fileRef = 2656630000000000015917; };
+9466730000000000015919 = { isa = PBXFileReference; path = VisAppDelegateIOS.h; sourceTree = "<group>"; };
+3085320000000000015939 = { isa = PBXBuildFile; fileRef = 9466730000000000015919; };
+2517380000000000015922 = { isa = PBXFileReference; path = VisAppDelegateIOS.m; sourceTree = "<group>"; };
+9179860000000000015940 = { isa = PBXBuildFile; fileRef = 2517380000000000015922; };
+5251740000000000015924 = { isa = PBXFileReference; path = VisEAGLViewIOS.h; sourceTree = "<group>"; };
+9571960000000000015941 = { isa = PBXBuildFile; fileRef = 5251740000000000015924; };
+5697810000000000015926 = { isa = PBXFileReference; path = VisEAGLViewIOS.m; sourceTree = "<group>"; };
+3562840000000000015942 = { isa = PBXBuildFile; fileRef = 5697810000000000015926; };
+0800160000000000015928 = { isa = PBXFileReference; path = VisMainIOS.m; sourceTree = "<group>"; };
+4702330000000000015943 = { isa = PBXBuildFile; fileRef = 0800160000000000015928; };
+0067980000000000015930 = { isa = PBXFileReference; path = VisViewControllerIOS.h; sourceTree = "<group>"; };
+3604090000000000015944 = { isa = PBXBuildFile; fileRef = 0067980000000000015930; };
+5075280000000000015932 = { isa = PBXFileReference; path = VisViewControllerIOS.m; sourceTree = "<group>"; };
+0307650000000000015945 = { isa = PBXBuildFile; fileRef = 5075280000000000015932; };
+9946290000000000015934 = { isa = PBXFileReference; path = VisAppSettings.h; sourceTree = "<group>"; };
+6818890000000000015946 = { isa = PBXBuildFile; fileRef = 9946290000000000015934; };
+5500000000000000015947 = { isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VisionEnginePlugin_ios_anarchy.xcodeproj; path = ../../../Runtime/EnginePlugins/VisionEnginePlugin/VisionEnginePlugin_ios_anarchy.xcodeproj; sourceTree = SOURCE_ROOT ; };
+3468170000000000015948 = { isa = PBXContainerItemProxy; containerPortal = 5500000000000000015947; proxyType = 1; remoteGlobalIDString = 660340137210013700000075; remoteInfo = libVisionEnginePlugin; };
+4388840000000000015949 = { isa = PBXContainerItemProxy; containerPortal = 5500000000000000015947; proxyType = 2; remoteGlobalIDString = 0033470000000000015950; remoteInfo = libVisionEnginePlugin; };
+9884680000000000015951 = { isa = PBXReferenceProxy; fileType = archive.ar; path = libVisionEnginePlugin.a; remoteRef = 4388840000000000015949 /* PBXContainerItemProxy */; sourceTree = BUILT_PRODUCTS_DIR; };
+6645160000000000015952 = { isa = PBXBuildFile; fileRef = 9884680000000000015951; };
+3264440000000000015954 = { isa = PBXTargetDependency; name = VisionEnginePlugin; targetProxy = 3468170000000000015948; /* PBXContainerItemProxy */ };
+7860290000000000015955 = { isa = PBXFileReference; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+5685300000000000015956 = { isa = PBXBuildFile; fileRef = 7860290000000000015955; };
+5191850000000000015957 = { isa = PBXFileReference; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+6464690000000000015958 = { isa = PBXBuildFile; fileRef = 5191850000000000015957; };
+8217080000000000015959 = { isa = PBXFileReference; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+3951490000000000015960 = { isa = PBXBuildFile; fileRef = 8217080000000000015959; };
+0852160000000000015961 = { isa = PBXFileReference; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+4978060000000000015962 = { isa = PBXBuildFile; fileRef = 0852160000000000015961; };
+0798180000000000015963 = { isa = PBXFileReference; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+5908210000000000015964 = { isa = PBXBuildFile; fileRef = 0798180000000000015963; };
+2286580000000000015965 = { isa = PBXFileReference; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+9604290000000000015966 = { isa = PBXBuildFile; fileRef = 2286580000000000015965; };
+2816810000000000015967 = { isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon.png"; sourceTree = "<group>"; };
+1931300000000000015972 = { isa = PBXBuildFile; fileRef = 2816810000000000015967; };
+1599750000000000015973 = { isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+9237940000000000015974 = { isa = PBXBuildFile; fileRef = 1599750000000000015973; };
+8926360000000000015975 = { isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+4185930000000000015976 = { isa = PBXBuildFile; fileRef = 8926360000000000015975; };
+5134860000000000015977 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Samples-Info.plist"; sourceTree = "<group>"; };
+0586380000000000015978 = { isa = PBXBuildFile; fileRef = 5134860000000000015977; };
+2584740000000000015979 = { isa = PBXFileReference; lastKnownFileType = folder; path = "Data"; sourceTree = "<group>"; };
+8514530000000000015980 = { isa = PBXBuildFile; fileRef = 2584740000000000015979; };
+2584740000000000015979 = { isa = PBXFileReference; lastKnownFileType = folder; path = "Data"; sourceTree = "<group>"; };
+5478480000000000015981 = { isa = PBXBuildFile; fileRef = 2584740000000000015979; };
+2584740000000000015979 = { isa = PBXFileReference; lastKnownFileType = folder; path = "Data"; sourceTree = "<group>"; };
+7209900000000000015982 = { isa = PBXBuildFile; fileRef = 2584740000000000015979; };
+9414910000000000015983 = { isa = PBXFileReference; lastKnownFileType = file.xib; path = "VisMainWindowIOS.xib"; sourceTree = "<group>"; };
+3386010000000000015984 = { isa = PBXBuildFile; fileRef = 9414910000000000015983; };
+6440500000000000015985 = { isa = PBXFileReference; lastKnownFileType = file.xib; path = "VisViewControllerIOS.xib"; sourceTree = "<group>"; };
+4625000000000000015986 = { isa = PBXBuildFile; fileRef = 6440500000000000015985; };
+6621290000000000015885 = { isa = PBXGroup; children = ( 8609190000000000015884, 7179450000000000015887, 2273860000000000015889, 1046990000000000015891, 0257700000000000015893, 5296250000000000015895, 6552440000000000015897, 3792760000000000015899, 0099360000000000015901, 6299040000000000015904, 5882630000000000015912, 5500000000000000015947, 7860290000000000015955, 5191850000000000015957, 8217080000000000015959, 0852160000000000015961, 0798180000000000015963, 2286580000000000015965, 8740130000000000015971, 2584740000000000015979, ); name = Products; sourceTree = "<group>"; };
+1004970000000000015953 = { isa = PBXGroup; children = ( 9884680000000000015951, ); name = Products; sourceTree = "<group>"; };
+6299040000000000015904 = { isa = PBXGroup; children = ( 6051330000000000015903, 9731840000000000015906, ); path = GUI; sourceTree = "<group>"; };
+7740050000000000015910 = { isa = PBXGroup; children = ( 1891050000000000015909, 1527070000000000015915, ); path = Runtime; sourceTree = "<group>"; };
+1527070000000000015915 = { isa = PBXGroup; children = ( 9035320000000000015914, ); path = EnginePlugins; sourceTree = "<group>"; };
+5139270000000000015968 = { isa = PBXGroup; children = ( 2816810000000000015967, 1599750000000000015973, 8926360000000000015975, ); path = Resources; sourceTree = "<group>"; };
+4831520000000000015970 = { isa = PBXGroup; children = ( 6196400000000000015969, ); path = Common; sourceTree = "<group>"; };
+6196400000000000015969 = { isa = PBXGroup; children = ( 5139270000000000015968, 5134860000000000015977, ); path = iOS; sourceTree = "<group>"; };
+5096650000000000015920 = { isa = PBXGroup; children = ( 9466730000000000015919, 2517380000000000015922, 5251740000000000015924, 5697810000000000015926, 0800160000000000015928, 0067980000000000015930, 5075280000000000015932, 9946290000000000015934, 9414910000000000015983, 6440500000000000015985, ); path = iOS; sourceTree = "<group>"; };
+7923490000000000015911 = { isa = PBXGroup; children = ( 7740050000000000015910, ); path = Vision; sourceTree = "<group>"; };
+8740130000000000015971 = { isa = PBXGroup; children = ( 4831520000000000015970, ); path = ../../../../../Data; sourceTree = "<group>"; };
+1891050000000000015909 = { isa = PBXGroup; children = ( 9764590000000000015908, 2656630000000000015917, 5096650000000000015920, ); path = Common; sourceTree = "<group>"; };
+5882630000000000015912 = { isa = PBXGroup; children = ( 7923490000000000015911, ); path = ../../../../../Source; sourceTree = "<group>"; };
+
+		
+		/* Describes the build configurations */
+		7654750000000000015987 = { isa = XCBuildConfiguration; name = debug_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = mh_execute; WRAPPER_EXTENSION = app;LIBRARY_SEARCH_PATHS = ( "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Debug", "../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,-D_DEBUG,-DHK_DEBUG,-DHK_DEBUG_SLOW,"-fno-inline");OTHER_LDFLAGS = (-lluaIOS,-lBaseD,-lVisionD);GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = YES;GCC_OPTIMIZATION_LEVEL = 0;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = NO; TARGETED_DEVICE_FAMILY = "1,2"; COMPRESS_PNG_FILES = NO; CODE_SIGN_IDENTITY = "iPhone Developer"; INFOPLIST_FILE = "../../../../../Data/Common/iOS/Samples-Info.plist"; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+5557980000000000015988 = { isa = XCBuildConfiguration; name = dev_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = mh_execute; WRAPPER_EXTENSION = app;LIBRARY_SEARCH_PATHS = ( "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Release", "../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,-DHK_DEBUG);OTHER_LDFLAGS = (-lluaIOS,-lBase,-lVision);GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = YES;GCC_OPTIMIZATION_LEVEL = 3;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = NO; TARGETED_DEVICE_FAMILY = "1,2"; COMPRESS_PNG_FILES = NO; CODE_SIGN_IDENTITY = "iPhone Developer"; INFOPLIST_FILE = "../../../../../Data/Common/iOS/Samples-Info.plist"; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+3212390000000000015989 = { isa = XCBuildConfiguration; name = release_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = mh_execute; WRAPPER_EXTENSION = app;LIBRARY_SEARCH_PATHS = ( "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Release", "../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,"-fomit-frame-pointer","-fno-implement-inlines");OTHER_LDFLAGS = (-lluaIOS,-lBase,-lVision);GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = NO;GCC_OPTIMIZATION_LEVEL = 3;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = NO; TARGETED_DEVICE_FAMILY = "1,2"; COMPRESS_PNG_FILES = NO; CODE_SIGN_IDENTITY = "iPhone Developer"; INFOPLIST_FILE = "../../../../../Data/Common/iOS/Samples-Info.plist"; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+3909320000000000015990 = { isa = XCBuildConfiguration; name = distrib_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = mh_execute; WRAPPER_EXTENSION = app;LIBRARY_SEARCH_PATHS = ( "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/lib/iphoneos/Release", "../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,"-fomit-frame-pointer","-fno-implement-inlines");OTHER_LDFLAGS = (-lluaIOS,-lBase,-lVision);GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = NO;GCC_OPTIMIZATION_LEVEL = 3;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = NO; TARGETED_DEVICE_FAMILY = "1,2"; COMPRESS_PNG_FILES = NO; CODE_SIGN_IDENTITY = "iPhone Distribution"; INFOPLIST_FILE = "../../../../../Data/Common/iOS/Samples-Info.plist"; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+
+		3411580000000000015991 = { isa = XCBuildConfiguration; name = debug_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../Bin/ios_xcode_anarchy/debug_v7"; OBJROOT = "../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/CharacterLOD"; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); PRODUCT_NAME = "CharacterLOD_ios-xcode_anarchy_debug_v7"; CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; }; };
+6500850000000000015992 = { isa = XCBuildConfiguration; name = dev_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../Bin/ios_xcode_anarchy/dev_v7"; OBJROOT = "../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/CharacterLOD"; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); PRODUCT_NAME = "CharacterLOD_ios-xcode_anarchy_dev_v7"; CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; }; };
+4544050000000000015993 = { isa = XCBuildConfiguration; name = release_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../Bin/ios_xcode_anarchy/release_v7"; OBJROOT = "../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/CharacterLOD"; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); PRODUCT_NAME = "CharacterLOD_ios-xcode_anarchy_release_v7"; CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; }; };
+3031750000000000015994 = { isa = XCBuildConfiguration; name = distrib_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../Bin/ios_xcode_anarchy/distrib_v7"; OBJROOT = "../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/CharacterLOD"; HEADER_SEARCH_PATHS = ( "../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", ); PRODUCT_NAME = "CharacterLOD_ios-xcode_anarchy_distrib_v7"; CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; }; };
+
+		4173620000000000015995 = { isa = XCConfigurationList; buildConfigurations = ( 5557980000000000015988, 7654750000000000015987, 3909320000000000015990, 3212390000000000015989, ); };
+		7715680000000000015996 = { isa = XCConfigurationList; buildConfigurations = ( 6500850000000000015992, 3411580000000000015991, 3031750000000000015994, 4544050000000000015993, ); };
+		
+		/* Describes the target */
+		/* Pre Build Step */
+		8529520000000000015997 =  /*  */ { isa = PBXShellScriptBuildPhase; buildActionMask = 2147483647; files = ( ); inputPaths = ( ); name = "Making symlinks to resources...."; outputPaths = ( ); runOnlyForDeploymentPostprocessing = 0; shellPath = "/bin/sh";shellScript = "python ../../../../../Build/StandaloneTools/Deployment/Python/linkiOSResources.py -r ../../../../../Data/Vision/Base/ Data/Vision/Base/ -r ../../../../../Data/Vision/Samples/Engine/Common/ Data/Vision/Samples/Engine/Common/ -r ../../../../../Data/Vision/Samples/Engine/Maps/SimpleGround/ Data/Vision/Samples/Engine/Maps/SimpleGround/ -l $CONFIGURATION";};
+		0410630000000000015998 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 8370040000000000015886, 4702330000000000015943, 8597130000000000015888, 1135400000000000015896, 9179860000000000015940, 1677030000000000015905, 3562840000000000015942, 7217710000000000015900, 0307650000000000015945, 6374940000000000015892, 1228240000000000015938, 5085810000000000015936, ); runOnlyForDeploymentPostprocessing = 0; };
+		6180440000000000015999 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = ( 4625000000000000015986, 4185930000000000015976, 3386010000000000015984, 7209900000000000015982, 9237940000000000015974, 1931300000000000015972, ); runOnlyForDeploymentPostprocessing = 0; };
+		6248000000000000016000 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( 4978060000000000015962, 6464690000000000015958, 9604290000000000015966, 5685300000000000015956, 5908210000000000015964, 3951490000000000015960, 6645160000000000015952, ); runOnlyForDeploymentPostprocessing = 0; };
+		3845990000000000016001 =  /* Copy resources to bundle.... */ { isa = PBXShellScriptBuildPhase; buildActionMask = 2147483647; files = ( ); inputPaths = ( ); name = "Copy resources to bundle...."; outputPaths = ( ); runOnlyForDeploymentPostprocessing = 0;shellPath = "/bin/sh";shellScript = "python ../../../../../Build/StandaloneTools/Deployment/Python/copyiOSResources.py -d $BUILT_PRODUCTS_DIR/$CONTENTS_FOLDER_PATH -r Data";};
+		583418137210013800000081 = { isa = PBXNativeTarget; buildConfigurationList = 4173620000000000015995; buildPhases = ( 2075820000000000014593, 0063370000000000014826, 1097140000000000014890, 7426930000000000015581, 9641120000000000015756, 8743060000000000015878, 8529520000000000015997, 0410630000000000015998, 6248000000000000016000, 6180440000000000015999, 3845990000000000016001,  ); dependencies = ( 3264440000000000015954, ); name = CharacterLOD; productName = CharacterLOD; productReference = 642688137210013800000080 /* CharacterLOD */ ;productType = "com.apple.product-type.application";}; 
+		
+		/* Describes the project */
+		7342950000000000016002 = { isa = PBXProject; projectDirPath = ""; projectRoot = ""; compatibilityVersion = "Xcode 3.2"; mainGroup = 6621290000000000015885; buildConfigurationList = 7715680000000000015996; projectReferences = ( { ProductGroup = 1004970000000000015953 /* Products */; ProjectRef = 5500000000000000015947; /* xcodeproj */ },
+ );
+ targets = ( 583418137210013800000081 ); };
+	};
+	
+	rootObject = 7342950000000000016002 /* Project object */;
+}

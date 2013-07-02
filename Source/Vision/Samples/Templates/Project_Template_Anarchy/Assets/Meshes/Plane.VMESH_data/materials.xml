@@ -1,0 +1,7 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="Ground1" diffuse="..\Textures\grid01.jpg" transparency="opaque" doublesided="FALSE" specmul="0.552239" specexp="128.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" lightmapsize="128,128" lightmapgran="0.000000" lightmapID="-1" Lighting="Lightmapping" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1.000000">
+            <Shader library="..\..\shaders\DeferredShading.ShaderLib" effect="InitialPass_Diff" paramstring="globalambientmultiplier=0.7;materialparams=0.552239,128,-0.03,-0.015;materialambient=0,0,0;falphatestthreshold=0.25,0,0,0;gmaterialindex=255;" />
+        </Material>
+    </Materials>
+</root>

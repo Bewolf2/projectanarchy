@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>Icons/UnknownAsset.png</file>
+    <file>Icons/CollectionAsset.png</file>
+    <file>Icons/CollisionMeshAsset.png</file>
+    <file>Icons/ModelAsset.png</file>
+    <file>Icons/AnimationAsset.png</file>
+    <file>Icons/ParticleEffectAsset.png</file>
+    <file>Icons/PrefabAsset.png</file>
+    <file>Icons/SoundAsset.png</file>
+    <file>Icons/StaticMeshAsset.png</file>
+    <file>Icons/TextureAsset.png</file>
+  </qresource>
+</RCC>

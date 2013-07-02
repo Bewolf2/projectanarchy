@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="FILE" Filename="Models\Misc\Plane.Model_data\materials.xml" OwnerRes="3" Size="449" />
+        <Resource Manager="EffectLibs" Filename="Shaders\MobileShaders.ShaderLib" Size="3779824" />
+        <Resource Manager="Textures" Filename="Textures\grid01.jpg" CustomInt="1,64" Size="5592404" />
+        <Resource Manager="Static/Dynamic Meshes" Filename="Models\Misc\Plane.Model" CustomInt="1,2" Size="56" />
+    </Resources>
+</root>

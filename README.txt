@@ -1,0 +1,1 @@
+Project Anarchy is a complete end to end game engine and state-of-the-art toolset for mobile. Project Anarchy also comprises a vibrant game development community centred right here at www.projectanarchy.com. Project Anarchy includes an entirely free license to ship your game on iOS, Android and Tizen platforms.

@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="Sphere1" diffuse="..\..\Textures\colors\Color_Orange.dds" transparency="opaque" doublesided="FALSE" specmul="0.000000" specexp="0.000000" parallaxscale="0.000000" parallaxbias="0.000000" lightmapsize="128,128" lightmapgran="0.000000" lightmapID="-1" Lighting="LightGrid" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1.000000" depthwrite="TRUE" zbias="0,0,0" />
+    </Materials>
+</root>

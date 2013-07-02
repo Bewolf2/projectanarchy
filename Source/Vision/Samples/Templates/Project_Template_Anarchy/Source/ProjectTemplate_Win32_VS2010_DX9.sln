@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectTemplate", "GameApplication\ProjectTemplateDX9_win32_vs2010.vcxproj", "{57A549C5-5B49-47F4-8650-7F147D8B4C06}"
+	ProjectSection(ProjectDependencies) = postProject
+		{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C} = {789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GamePlugin100", "GamePlugin\GamePluginDX9_win32_vs2010.vcxproj", "{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug DLL|Win32 = Debug DLL|Win32
+		Dev DLL|Win32 = Dev DLL|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57A549C5-5B49-47F4-8650-7F147D8B4C06}.Debug DLL|Win32.ActiveCfg = Debug DLL|Win32
+		{57A549C5-5B49-47F4-8650-7F147D8B4C06}.Debug DLL|Win32.Build.0 = Debug DLL|Win32
+		{57A549C5-5B49-47F4-8650-7F147D8B4C06}.Dev DLL|Win32.ActiveCfg = Dev DLL|Win32
+		{57A549C5-5B49-47F4-8650-7F147D8B4C06}.Dev DLL|Win32.Build.0 = Dev DLL|Win32
+		{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}.Debug DLL|Win32.ActiveCfg = Debug DLL|Win32
+		{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}.Debug DLL|Win32.Build.0 = Debug DLL|Win32
+		{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}.Dev DLL|Win32.ActiveCfg = Dev DLL|Win32
+		{789E94DE-ED72-4C0F-A6BB-65BE92BCA08C}.Dev DLL|Win32.Build.0 = Dev DLL|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

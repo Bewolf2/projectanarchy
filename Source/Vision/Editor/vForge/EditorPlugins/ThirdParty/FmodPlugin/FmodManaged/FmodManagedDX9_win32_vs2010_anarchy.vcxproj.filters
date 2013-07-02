@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="EngineInstances">
+        <UniqueIdentifier>485DF57F-85DF-4F48-DF57-485DF57F485D</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EngineInstances\EngineInstanceFmodEvent.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceFmodCollisionMesh.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceFmodReverb.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceFmodCollisionMesh.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceFmodIncludes.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="AssemblyInfo.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="EngineInstances\EngineInstanceFmodSound.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="FmodManagedPCH.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="EngineInstances\EngineInstanceFmodEvent.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="EngineInstances\EngineInstanceFmodReverb.cpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="FmodManaged.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="FmodManagedPCH.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="EngineInstances\EngineInstanceFmodSound.hpp">
+        <Filter>EngineInstances</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+
+  </ItemGroup>
+</Project>

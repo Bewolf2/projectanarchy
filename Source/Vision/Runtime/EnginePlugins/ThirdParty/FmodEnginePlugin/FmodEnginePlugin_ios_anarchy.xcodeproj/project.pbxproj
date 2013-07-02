@@ -1,0 +1,90 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+		
+		/* Describes the files */
+		148318137210013700000072 = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libvFmodEnginePlugin.a;sourceTree = BUILT_PRODUCTS_DIR; };
+9001350000000000014830 = { isa = PBXFileReference; path = FmodEnginePlugin.cpp; sourceTree = "<group>"; };
+7916310000000000014832 = { isa = PBXBuildFile; fileRef = 9001350000000000014830; };
+6026780000000000014833 = { isa = PBXFileReference; path = FmodEnginePlugin.hpp; sourceTree = "<group>"; };
+1474700000000000014834 = { isa = PBXBuildFile; fileRef = 6026780000000000014833; };
+2670160000000000014835 = { isa = PBXFileReference; path = VFmodAnimationEventSoundTrigger.cpp; sourceTree = "<group>"; };
+4429060000000000014836 = { isa = PBXBuildFile; fileRef = 2670160000000000014835; };
+6691490000000000014837 = { isa = PBXFileReference; path = VFmodAnimationEventSoundTrigger.hpp; sourceTree = "<group>"; };
+9294800000000000014838 = { isa = PBXBuildFile; fileRef = 6691490000000000014837; };
+6377900000000000014839 = { isa = PBXFileReference; path = VFmodCollisionMeshInstance.cpp; sourceTree = "<group>"; };
+5615020000000000014840 = { isa = PBXBuildFile; fileRef = 6377900000000000014839; };
+4270370000000000014841 = { isa = PBXFileReference; path = VFmodCollisionMeshInstance.hpp; sourceTree = "<group>"; };
+4881870000000000014842 = { isa = PBXBuildFile; fileRef = 4270370000000000014841; };
+8182250000000000014843 = { isa = PBXFileReference; path = VFmodEvent.cpp; sourceTree = "<group>"; };
+1168040000000000014844 = { isa = PBXBuildFile; fileRef = 8182250000000000014843; };
+1736930000000000014845 = { isa = PBXFileReference; path = VFmodEvent.hpp; sourceTree = "<group>"; };
+2086500000000000014846 = { isa = PBXBuildFile; fileRef = 1736930000000000014845; };
+1986510000000000014847 = { isa = PBXFileReference; path = VFmodEventGroup.cpp; sourceTree = "<group>"; };
+7184990000000000014848 = { isa = PBXBuildFile; fileRef = 1986510000000000014847; };
+0770390000000000014849 = { isa = PBXFileReference; path = VFmodEventGroup.hpp; sourceTree = "<group>"; };
+3442490000000000014850 = { isa = PBXBuildFile; fileRef = 0770390000000000014849; };
+9438360000000000014851 = { isa = PBXFileReference; path = VFmodIncludes.hpp; sourceTree = "<group>"; };
+8599870000000000014852 = { isa = PBXBuildFile; fileRef = 9438360000000000014851; };
+3351740000000000014853 = { isa = PBXFileReference; path = VFmodManager.cpp; sourceTree = "<group>"; };
+9211280000000000014854 = { isa = PBXBuildFile; fileRef = 3351740000000000014853; };
+1126070000000000014855 = { isa = PBXFileReference; path = VFmodManager.hpp; sourceTree = "<group>"; };
+7085110000000000014856 = { isa = PBXBuildFile; fileRef = 1126070000000000014855; };
+3925200000000000014857 = { isa = PBXFileReference; path = VFmodReverb.cpp; sourceTree = "<group>"; };
+6095350000000000014858 = { isa = PBXBuildFile; fileRef = 3925200000000000014857; };
+2030200000000000014859 = { isa = PBXFileReference; path = VFmodReverb.hpp; sourceTree = "<group>"; };
+4647940000000000014860 = { isa = PBXBuildFile; fileRef = 2030200000000000014859; };
+3109060000000000014861 = { isa = PBXFileReference; path = VFmodSoundObject.cpp; sourceTree = "<group>"; };
+3893430000000000014862 = { isa = PBXBuildFile; fileRef = 3109060000000000014861; };
+6738020000000000014863 = { isa = PBXFileReference; path = VFmodSoundObject.hpp; sourceTree = "<group>"; };
+9371290000000000014864 = { isa = PBXBuildFile; fileRef = 6738020000000000014863; };
+4155870000000000014865 = { isa = PBXFileReference; path = VFmodSoundResource.cpp; sourceTree = "<group>"; };
+2035540000000000014866 = { isa = PBXBuildFile; fileRef = 4155870000000000014865; };
+0737470000000000014867 = { isa = PBXFileReference; path = VFmodSoundResource.hpp; sourceTree = "<group>"; };
+5057980000000000014868 = { isa = PBXBuildFile; fileRef = 0737470000000000014867; };
+3081360000000000014869 = { isa = PBXFileReference; path = FmodLuaModule.i; sourceTree = "<group>"; };
+4462370000000000014871 = { isa = PBXBuildFile; fileRef = 3081360000000000014869; };
+2801030000000000014872 = { isa = PBXFileReference; path = VFmodEvent.i; sourceTree = "<group>"; };
+8077740000000000014873 = { isa = PBXBuildFile; fileRef = 2801030000000000014872; };
+8935110000000000014874 = { isa = PBXFileReference; path = VFmodManager.i; sourceTree = "<group>"; };
+7315520000000000014875 = { isa = PBXBuildFile; fileRef = 8935110000000000014874; };
+2217910000000000014876 = { isa = PBXFileReference; path = VFmodSoundObject.i; sourceTree = "<group>"; };
+2439160000000000014877 = { isa = PBXBuildFile; fileRef = 2217910000000000014876; };
+6504060000000000014878 = { isa = PBXFileReference; path = FmodLuaModule_wrapper.cpp; sourceTree = "<group>"; };
+3790130000000000014879 = { isa = PBXBuildFile; fileRef = 6504060000000000014878; };
+6863800000000000014831 = { isa = PBXGroup; children = ( 9001350000000000014830, 6026780000000000014833, 2670160000000000014835, 6691490000000000014837, 6377900000000000014839, 4270370000000000014841, 8182250000000000014843, 1736930000000000014845, 1986510000000000014847, 0770390000000000014849, 9438360000000000014851, 3351740000000000014853, 1126070000000000014855, 3925200000000000014857, 2030200000000000014859, 3109060000000000014861, 6738020000000000014863, 4155870000000000014865, 0737470000000000014867, 0975730000000000014870, ); name = Products; sourceTree = "<group>"; };
+0975730000000000014870 = { isa = PBXGroup; children = ( 3081360000000000014869, 2801030000000000014872, 8935110000000000014874, 2217910000000000014876, 6504060000000000014878, ); path = Lua; sourceTree = "<group>"; };
+
+		
+		/* Describes the build configurations */
+		2643110000000000014880 = { isa = XCBuildConfiguration; name = debug_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = staticlib;LIBRARY_SEARCH_PATHS = ( "../../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,-D_DEBUG,-DHK_DEBUG,-DHK_DEBUG_SLOW,"-fno-inline");OTHER_LDFLAGS = ();GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = YES;GCC_OPTIMIZATION_LEVEL = 0;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = YES; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+4647800000000000014881 = { isa = XCBuildConfiguration; name = dev_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = staticlib;LIBRARY_SEARCH_PATHS = ( "../../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,-DHK_DEBUG);OTHER_LDFLAGS = ();GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = YES;GCC_OPTIMIZATION_LEVEL = 3;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = YES; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+2505750000000000014882 = { isa = XCBuildConfiguration; name = release_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = staticlib;LIBRARY_SEARCH_PATHS = ( "../../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,"-fomit-frame-pointer","-fno-implement-inlines");OTHER_LDFLAGS = ();GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = NO;GCC_OPTIMIZATION_LEVEL = 3;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = YES; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+8965360000000000014883 = { isa = XCBuildConfiguration; name = distrib_v7; buildSettings = { ARCHS = (armv7); SDKROOT = iphoneos; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); IPHONEOS_DEPLOYMENT_TARGET = 4.3;GCC_PRECOMPILE_PREFIX_HEADER = NO; GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (HK_ANARCHY,PROFILING,_VISION_IOS,_VISION_POSIX,_VR_GLES2,VBASE_LIB,LINK_WITH_VISION,VISIONDLL_LIB);SUPPORTED_PLATFORMS = iphoneos;MACH_O_TYPE = staticlib;LIBRARY_SEARCH_PATHS = ( "../../../../../../Lib/ios_xcode_anarchy/$(CONFIGURATION)", ); OTHER_CPLUSPLUSFLAGS = ("-fno-strict-aliasing","-std=c++98","-mfpu=neon","-mfloat-abi=softfp",-DHK_ANARCHY,-DPROFILING,-D_VISION_IOS,-D_VISION_POSIX,-D_VR_GLES2,-DVBASE_LIB,-DLINK_WITH_VISION,-DVISIONDLL_LIB,"-fomit-frame-pointer","-fno-implement-inlines");OTHER_LDFLAGS = ();GCC_INLINES_ARE_PRIVATE_EXTERN = YES;GCC_SYMBOLS_PRIVATE_EXTERN = NO;GCC_ENABLE_SYMBOL_SEPARATION = NO;GCC_USE_GCC3_PFE_SUPPORT = NO;GCC_STRICT_ALIASING = NO;GCC_ENABLE_CPP_RTTI = NO; GCC_ENABLE_CPP_EXCEPTIONS = NO; DEBUG_INFORMATION_FORMAT = dwarf;GCC_GENERATE_DEBUGGING_SYMBOLS = NO;GCC_OPTIMIZATION_LEVEL = 3;GCC_THUMB_SUPPORT = NO; GCC_VERSION = com.apple.compilers.llvm.clang.1_0;SKIP_INSTALL = YES; WARNING_CFLAGS = ("-W", "-Wall", "-Wundef", "-Wno-inline", "-Wcast-qual", "-Wno-unused", "-Wno-unknown-pragmas","-Wno-ignored-qualifiers", "-Wno-overflow", "-Wno-type-limits", "-Wno-sign-compare", "-Wno-char-subscripts", "-Wno-switch", "-Wno-dangling-else", "-Wno-comment", "-Wno-shadow", -Wno-unused-parameter);GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;}; };
+
+		0595800000000000014884 = { isa = XCBuildConfiguration; name = debug_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../../Lib/ios_xcode_anarchy/debug_v7"; OBJROOT = "../../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/FmodEnginePlugin"; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); PRODUCT_NAME = "vFmodEnginePlugin"; }; };
+7401240000000000014885 = { isa = XCBuildConfiguration; name = dev_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../../Lib/ios_xcode_anarchy/dev_v7"; OBJROOT = "../../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/FmodEnginePlugin"; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); PRODUCT_NAME = "vFmodEnginePlugin"; }; };
+2443860000000000014886 = { isa = XCBuildConfiguration; name = release_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../../Lib/ios_xcode_anarchy/release_v7"; OBJROOT = "../../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/FmodEnginePlugin"; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); PRODUCT_NAME = "vFmodEnginePlugin"; }; };
+8053000000000000014887 = { isa = XCBuildConfiguration; name = distrib_v7; buildSettings = { CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)"; CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$"; SYMROOT = "../../../../../../Lib/ios_xcode_anarchy/distrib_v7"; OBJROOT = "../../../../../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/FmodEnginePlugin"; HEADER_SEARCH_PATHS = ( "../../../../..", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/", "$(HAVOK_THIRDPARTY_DIR)/redistsdks/fmod/4.44.11/inc", ); PRODUCT_NAME = "vFmodEnginePlugin"; }; };
+
+		1655240000000000014888 = { isa = XCConfigurationList; buildConfigurations = ( 4647800000000000014881, 2643110000000000014880, 8965360000000000014883, 2505750000000000014882, ); };
+		2904370000000000014889 = { isa = XCConfigurationList; buildConfigurations = ( 7401240000000000014885, 0595800000000000014884, 8053000000000000014887, 2443860000000000014886, ); };
+
+		/* Describes the target */
+		/* Pre Build Step */
+		1097140000000000014890 =  /*  */ { isa = PBXShellScriptBuildPhase; buildActionMask = 2147483647; files = ( ); inputPaths = ( ); name = "Running Swig"; outputPaths = ( ); runOnlyForDeploymentPostprocessing = 0; shellPath = "/bin/sh";shellScript = "export SWIG_LIB=$HAVOK_THIRDPARTY_DIR/redistsdks/swig/2.0.3/Lib;\"$HAVOK_THIRDPARTY_DIR/redistsdks/swig/2.0.3/swigMac\" -c++ -lua -verbose -o Lua/FmodLuaModule_wrapper.cpp -I../../../../.. Lua/FmodLuaModule.i;python \"../../../../../../Build/StandaloneTools/Iswig/Python/iswig.py\" --includePre \"Vision/Runtime/EnginePlugins/ThirdParty/FmodEnginePlugin/FmodEnginePlugin.hpp\" Lua/FmodLuaModule_wrapper.cpp";};
+		5500870000000000014891 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( 5615020000000000014840, 4429060000000000014836, 3790130000000000014879, 3893430000000000014862, 6095350000000000014858, 7916310000000000014832, 7184990000000000014848, 9211280000000000014854, 1168040000000000014844, 2035540000000000014866, ); runOnlyForDeploymentPostprocessing = 0; };
+		1912670000000000014892 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = ( ); runOnlyForDeploymentPostprocessing = 0; };
+		186678137210013700000073 = { isa = PBXNativeTarget; buildConfigurationList = 1655240000000000014888; buildPhases = ( 2075820000000000014593, 0063370000000000014826, 1097140000000000014890, 5500870000000000014891, 1912670000000000014892,  ); dependencies = (  ); name = libvFmodEnginePlugin; productName = libvFmodEnginePlugin; productReference = 148318137210013700000072 /* libvFmodEnginePlugin */ ;productType = "com.apple.product-type.library.static";}; 
+		
+		/* Describes the project */
+		0873380000000000014893 = { isa = PBXProject; projectDirPath = ""; projectRoot = ""; compatibilityVersion = "Xcode 3.2"; mainGroup = 6863800000000000014831; buildConfigurationList = 2904370000000000014889; projectReferences = ( );
+ targets = ( 186678137210013700000073 ); };
+	};
+	
+	rootObject = 0873380000000000014893 /* Project object */;
+}

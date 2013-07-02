@@ -1,0 +1,5 @@
+<root>
+    <Materials override="TRUE">
+        <Material name="check_HedMaterial" diffuse="..\..\Textures\grid01.jpg" transparency="opaque" doublesided="FALSE" specmul="0.000000" specexp="0.000000" parallaxscale="-0.030000" parallaxbias="-0.015000" lightmapsize="128,128" lightmapgran="0.000000" lightmapID="-1" Lighting="LightGrid" ambient="0,0,0,255" sortingkey="0" alphathreshold="-1.000000" />
+    </Materials>
+</root>

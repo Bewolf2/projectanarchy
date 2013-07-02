@@ -1,0 +1,8 @@
+<root>
+    <Resources Version="1" Count="4" PathType="Project">
+        <Resource Manager="FILE" Filename="Data\Models\Misc\CharHeight.Model_data\materials.xml" Size="689" />
+        <Resource Manager="Textures" Filename="Data\Textures\grey.bmp" CustomInt="1,0" Size="65536" />
+        <Resource Manager="EffectLibs" Filename="shaders\DeferredShading.ShaderLib" Size="113092" />
+        <Resource Manager="Models" Filename="Data\Models\Misc\CharHeight.Model" CustomInt="1" Size="316" />
+    </Resources>
+</root>

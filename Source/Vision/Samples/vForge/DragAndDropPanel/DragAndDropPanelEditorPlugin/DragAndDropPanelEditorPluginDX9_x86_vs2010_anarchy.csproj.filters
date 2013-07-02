@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Panels">
+        <UniqueIdentifier>1B184251-1842-4B18-251B-84251B184251</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="Properties">
+        <UniqueIdentifier>33A753D3-A753-43A7-3D33-753D33A753D3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="PluginClasses">
+        <UniqueIdentifier>7AFBC872-AFBC-427A-BC87-7AFBC8727AFB</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PluginClasses\DragAndDropPanelEntry.cs">
+        <Filter>PluginClasses</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="EditorPlugin.cs">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="PluginClasses\StaticMeshShapeCreator.cs">
+        <Filter>PluginClasses</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Panels\DragAndDropPanel.cs">
+        <Filter>Panels</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <EmbeddedResource Include="Panels\DragAndDropPanel.resx">
+        <Filter>Panels</Filter>
+        <DeploymentContent>False</DeploymentContent></EmbeddedResource>
+    <Compile Include="Panels\DragAndDropPanel.Designer.cs">
+        <Filter>Panels</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+        <Filter>Properties</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+    <Compile Include="PluginClasses\ModelShapeCreator.cs">
+        <Filter>PluginClasses</Filter>
+        <DeploymentContent>False</DeploymentContent></Compile>
+
+  </ItemGroup>
+</Project>

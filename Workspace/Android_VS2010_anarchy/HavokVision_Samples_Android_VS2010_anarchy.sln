@@ -1,0 +1,196 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Accelerometer", "..\..\Source\Vision\Samples\Engine\Accelerometer\Accelerometer_and_vs2010_anarchy.vcxproj", "{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BasicAnimation", "..\..\Source\Vision\Samples\Engine\BasicAnimation\BasicAnimation_and_vs2010_anarchy.vcxproj", "{A619205F-8E2C-352E-BAEF-C66A3BF3C125}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CharacterLOD", "..\..\Source\Vision\Samples\Engine\CharacterLOD\CharacterLOD_and_vs2010_anarchy.vcxproj", "{FF152960-A4AC-38F0-B335-08B5CC5818FC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomEntityTextures", "..\..\Source\Vision\Samples\Engine\CustomEntityTextures\CustomEntityTextures_and_vs2010_anarchy.vcxproj", "{9C69B856-238E-3C7C-9A11-71EDA59AC36B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileServe", "..\..\Source\Vision\Samples\Engine\FileServe\FileServe_and_vs2010_anarchy.vcxproj", "{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI", "..\..\Source\Vision\Samples\Engine\GUI\GUI_and_vs2010_anarchy.vcxproj", "{8E7B353F-C5F1-32A0-A170-523FA0502138}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HavokAi", "..\..\Source\Vision\Samples\Engine\HavokAi\HavokAi_and_vs2010_anarchy.vcxproj", "{17B7CE53-C27D-3428-AEA2-7C7D72B85E36}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MobileOffroad", "..\..\Source\Vision\Samples\Engine\MobileOffroad\MobileOffroad_and_vs2010_anarchy.vcxproj", "{54D37226-523A-21D3-B646-AB6E3B9C3E71}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8199D84A-8759-34BA-9828-DC808E15DAAC} = {8199D84A-8759-34BA-9828-DC808E15DAAC}
+		{8199D84A-8759-34BA-9828-DC808E15DAAC} = {8199D84A-8759-34BA-9828-DC808E15DAAC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MobileOffroadPlugin", "..\..\Source\Vision\Samples\Engine\MobileOffroadPlugin\MobileOffroadPlugin_and_vs2010_anarchy.vcxproj", "{8199D84A-8759-34BA-9828-DC808E15DAAC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ModelMerging", "..\..\Source\Vision\Samples\Engine\ModelMerging\ModelMerging_and_vs2010_anarchy.vcxproj", "{512835C5-256B-332B-9FAE-6DA90FA9C0F3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RenderToTexture", "..\..\Source\Vision\Samples\Engine\RenderToTexture\RenderToTexture_and_vs2010_anarchy.vcxproj", "{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Serialization", "..\..\Source\Vision\Samples\Engine\Serialization\Serialization_and_vs2010_anarchy.vcxproj", "{AD6F682F-1272-3C90-9636-CEC4395B19DE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimpleFont", "..\..\Source\Vision\Samples\Engine\SimpleFont\SimpleFont_and_vs2010_anarchy.vcxproj", "{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial01", "..\..\Source\Vision\Samples\Engine\Tutorial01\Tutorial01_and_vs2010_anarchy.vcxproj", "{37A97266-825D-42F4-A636-FB4D4A9B3D52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial02", "..\..\Source\Vision\Samples\Engine\Tutorial02\Tutorial02_and_vs2010_anarchy.vcxproj", "{726DD9C3-7348-4606-B61C-12BBA3F14B7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial03", "..\..\Source\Vision\Samples\Engine\Tutorial03\Tutorial03_and_vs2010_anarchy.vcxproj", "{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial04", "..\..\Source\Vision\Samples\Engine\Tutorial04\Tutorial04_and_vs2010_anarchy.vcxproj", "{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tutorial05", "..\..\Source\Vision\Samples\Engine\Tutorial05\Tutorial05_and_vs2010_anarchy.vcxproj", "{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Unicode", "..\..\Source\Vision\Samples\Engine\Unicode\Unicode_and_vs2010_anarchy.vcxproj", "{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vision", "Vision", "{CD25BA51-4655-4157-A90B-51B17757FEC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{D1643F47-8321-4247-8B54-0E3DB487D897}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{51206A3A-820D-445A-8EE7-56ED9FEED972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|hkAndroid = Debug|hkAndroid
+		Dev|hkAndroid = Dev|hkAndroid
+		Release|hkAndroid = Release|hkAndroid
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{8E7B353F-C5F1-32A0-A170-523FA0502138}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{8E7B353F-C5F1-32A0-A170-523FA0502138}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{8E7B353F-C5F1-32A0-A170-523FA0502138}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{8E7B353F-C5F1-32A0-A170-523FA0502138}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{8E7B353F-C5F1-32A0-A170-523FA0502138}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{8E7B353F-C5F1-32A0-A170-523FA0502138}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{17B7CE53-C27D-3428-AEA2-7C7D72B85E36}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{17B7CE53-C27D-3428-AEA2-7C7D72B85E36}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{17B7CE53-C27D-3428-AEA2-7C7D72B85E36}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{8199D84A-8759-34BA-9828-DC808E15DAAC}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{8199D84A-8759-34BA-9828-DC808E15DAAC}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{8199D84A-8759-34BA-9828-DC808E15DAAC}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{8199D84A-8759-34BA-9828-DC808E15DAAC}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{8199D84A-8759-34BA-9828-DC808E15DAAC}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{8199D84A-8759-34BA-9828-DC808E15DAAC}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F}.Release|hkAndroid.Build.0 = Release|hkAndroid
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}.Debug|hkAndroid.ActiveCfg = Debug|hkAndroid
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}.Debug|hkAndroid.Build.0 = Debug|hkAndroid
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}.Dev|hkAndroid.ActiveCfg = Dev|hkAndroid
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}.Dev|hkAndroid.Build.0 = Dev|hkAndroid
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}.Release|hkAndroid.ActiveCfg = Release|hkAndroid
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F}.Release|hkAndroid.Build.0 = Release|hkAndroid
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D1643F47-8321-4247-8B54-0E3DB487D897} = {CD25BA51-4655-4157-A90B-51B17757FEC5}
+		{51206A3A-820D-445A-8EE7-56ED9FEED972} = {D1643F47-8321-4247-8B54-0E3DB487D897}
+		{9C69B856-238E-3C7C-9A11-71EDA59AC36B} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{0F6A1296-D925-39A1-84FB-C54FF5CC4CD2} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{8E7B353F-C5F1-32A0-A170-523FA0502138} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{17B7CE53-C27D-3428-AEA2-7C7D72B85E36} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{54D37226-523A-21D3-B646-AB6E3B9C3E71} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{8199D84A-8759-34BA-9828-DC808E15DAAC} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{512835C5-256B-332B-9FAE-6DA90FA9C0F3} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{F6CF679C-9E2D-37AA-B67E-9C403CC85F21} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{AD6F682F-1272-3C90-9636-CEC4395B19DE} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{9E0D7B8C-E67F-3E20-93C7-EF10AF2025B8} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{37A97266-825D-42F4-A636-FB4D4A9B3D52} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{726DD9C3-7348-4606-B61C-12BBA3F14B7B} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{F316BA4F-D40D-47A5-8F0E-5916D831B3D0} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{8C1D107A-23D0-4DBD-8E3F-DB2EDEA29588} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{5C0D3652-2A8F-4348-AC20-2C621E05AD5F} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{D6AD3CAB-368E-30BC-9A3A-E2AB7C69CE2F} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{232A3C46-471E-3B55-AC1C-B3A1B2F80C36} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{A619205F-8E2C-352E-BAEF-C66A3BF3C125} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+		{FF152960-A4AC-38F0-B335-08B5CC5818FC} = {51206A3A-820D-445A-8EE7-56ED9FEED972}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External\Source\Vision\Runtime\Common">
+        <UniqueIdentifier>2032AE82-032A-4220-2AE8-2032AE822032</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT">
+        <UniqueIdentifier>7352D9FC-352D-4C73-2D9F-7352D9FC7352</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT\sources">
+        <UniqueIdentifier>AEE476EA-E476-4EE4-6EAE-476EAEE476EA</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="GUI">
+        <UniqueIdentifier>693BCF76-93BC-4669-BCF7-693BCF76693B</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT\sources\android">
+        <UniqueIdentifier>5F08C795-F08C-455F-8C79-5F08C7955F08</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT\sources\android\native_app_glue">
+        <UniqueIdentifier>26681BEC-6681-4C26-81BE-26681BEC2668</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Runtime">
+        <UniqueIdentifier>25C3B14D-5C3B-4D25-3B14-25C3B14D25C3</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision">
+        <UniqueIdentifier>11FD8A92-1FD8-4211-D8A9-11FD8A9211FD</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Runtime\Common">
+        <UniqueIdentifier>154ADA41-54AD-4115-ADA4-154ADA41154A</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision\Runtime">
+        <UniqueIdentifier>5E733E32-E733-425E-33E3-5E733E325E73</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Runtime\EnginePlugins">
+        <UniqueIdentifier>16D60179-6D60-4916-6017-16D6017916D6</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source">
+        <UniqueIdentifier>4F99A41B-F99A-4B4F-9A41-4F99A41B4F99</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External">
+        <UniqueIdentifier>283B594B-83B5-4B28-B594-283B594B283B</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Vision\Runtime\Common\VSampleTouchMenu.hpp">
+        <Filter>External\Source\Vision\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vSceneViewerPCH.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClInclude Include="vLuaScript.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="vSceneViewer.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="..\..\Runtime\EnginePlugins\EnginePluginsImport.hpp">
+        <Filter>External\Runtime\EnginePlugins</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="SceneConfig.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="vSceneViewerPCH.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Vision\Runtime\Common\VSampleTouchMenu.cpp">
+        <Filter>External\Source\Vision\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\Runtime\Common\VisSampleAppCallbacks.cpp">
+        <Filter>External\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="vSceneViewer.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="$(ANDROID_NDK_ROOT)\sources\android\native_app_glue\android_native_app_glue.c">
+        <Filter>ANDROID_NDK_ROOT\sources\android\native_app_glue</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\Runtime\Common\VisSampleApp.cpp">
+        <Filter>External\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="resource.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="GUI\GUISystem.cpp">
+        <Filter>GUI</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="GUI\GUISystem.hpp">
+        <Filter>GUI</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+
+  </ItemGroup>
+</Project>

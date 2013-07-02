@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="External\Source\Vision\Runtime\Common">
+        <UniqueIdentifier>2032AE82-032A-4220-2AE8-2032AE822032</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT">
+        <UniqueIdentifier>7352D9FC-352D-4C73-2D9F-7352D9FC7352</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision">
+        <UniqueIdentifier>11FD8A92-1FD8-4211-D8A9-11FD8A9211FD</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT\sources\android">
+        <UniqueIdentifier>5F08C795-F08C-455F-8C79-5F08C7955F08</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT\sources\android\native_app_glue">
+        <UniqueIdentifier>26681BEC-6681-4C26-81BE-26681BEC2668</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision\Runtime">
+        <UniqueIdentifier>5E733E32-E733-425E-33E3-5E733E325E73</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="ANDROID_NDK_ROOT\sources">
+        <UniqueIdentifier>AEE476EA-E476-4EE4-6EAE-476EAEE476EA</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source\Vision\Runtime\EnginePlugins">
+        <UniqueIdentifier>AEE910AA-E910-4EE9-0AAE-910AAEE910AA</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External\Source">
+        <UniqueIdentifier>4F99A41B-F99A-4B4F-9A41-4F99A41B4F99</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+    <Filter Include="External">
+        <UniqueIdentifier>283B594B-83B5-4B28-B594-283B594B283B</UniqueIdentifier>
+        <DeploymentContent>False</DeploymentContent></Filter>
+
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Source\Vision\Runtime\Common\VisSampleApp.cpp">
+        <Filter>External\Source\Vision\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="main.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="..\..\..\..\..\Source\Vision\Runtime\Common\VisSampleAppCallbacks.cpp">
+        <Filter>External\Source\Vision\Runtime\Common</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="MyEntity.hpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="MyEntity.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="..\..\..\..\..\Source\Vision\Runtime\EnginePlugins\EnginePluginsImport.hpp">
+        <Filter>External\Source\Vision\Runtime\EnginePlugins</Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+    <ClCompile Include="Tutorial05PCH.cpp">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClCompile Include="$(ANDROID_NDK_ROOT)\sources\android\native_app_glue\android_native_app_glue.c">
+        <Filter>ANDROID_NDK_ROOT\sources\android\native_app_glue</Filter>
+        <DeploymentContent>False</DeploymentContent></ClCompile>
+    <ClInclude Include="Tutorial05PCH.h">
+        <Filter></Filter>
+        <DeploymentContent>False</DeploymentContent></ClInclude>
+
+  </ItemGroup>
+</Project>

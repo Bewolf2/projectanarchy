@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DE116401738FC2100E51293 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE116381738FC2100E51293 /* GameManager.cpp */; };
+		1DE116411738FC2100E51293 /* GamePluginPCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1163B1738FC2100E51293 /* GamePluginPCH.cpp */; };
+		1DE116421738FC2100E51293 /* myComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1163D1738FC2100E51293 /* myComponent.cpp */; };
+		1DE116431738FC2100E51293 /* PluginMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DE1163F1738FC2100E51293 /* PluginMain.cpp */; };
+		2D9B88301767841E008CDDEC /* TemplateAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B882E1767841E008CDDEC /* TemplateAction.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DE116361738FBE100E51293 /* libGamePlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGamePlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DE116381738FC2100E51293 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameManager.cpp; sourceTree = "<group>"; };
+		1DE116391738FC2100E51293 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameManager.h; sourceTree = "<group>"; };
+		1DE1163A1738FC2100E51293 /* GamePluginModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePluginModule.h; sourceTree = "<group>"; };
+		1DE1163B1738FC2100E51293 /* GamePluginPCH.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePluginPCH.cpp; sourceTree = "<group>"; };
+		1DE1163C1738FC2100E51293 /* GamePluginPCH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePluginPCH.h; sourceTree = "<group>"; };
+		1DE1163D1738FC2100E51293 /* myComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = myComponent.cpp; sourceTree = "<group>"; };
+		1DE1163E1738FC2100E51293 /* myComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myComponent.h; sourceTree = "<group>"; };
+		1DE1163F1738FC2100E51293 /* PluginMain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PluginMain.cpp; sourceTree = "<group>"; };
+		2D9B882E1767841E008CDDEC /* TemplateAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TemplateAction.cpp; sourceTree = "<group>"; };
+		2D9B882F1767841E008CDDEC /* TemplateAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateAction.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5140870000000000018549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DE116371738FBE100E51293 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DE116361738FBE100E51293 /* libGamePlugin.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3397870000000000017779 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D9B882E1767841E008CDDEC /* TemplateAction.cpp */,
+				2D9B882F1767841E008CDDEC /* TemplateAction.h */,
+				1DE116381738FC2100E51293 /* GameManager.cpp */,
+				1DE116391738FC2100E51293 /* GameManager.h */,
+				1DE1163A1738FC2100E51293 /* GamePluginModule.h */,
+				1DE1163B1738FC2100E51293 /* GamePluginPCH.cpp */,
+				1DE1163C1738FC2100E51293 /* GamePluginPCH.h */,
+				1DE1163D1738FC2100E51293 /* myComponent.cpp */,
+				1DE1163E1738FC2100E51293 /* myComponent.h */,
+				1DE1163F1738FC2100E51293 /* PluginMain.cpp */,
+				1DE116371738FBE100E51293 /* Products */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504685136751641300000101 /* libGamePlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9935150000000000018545 /* Build configuration list for PBXNativeTarget "libGamePlugin" */;
+			buildPhases = (
+				1971080000000000018548 /* Sources */,
+				5140870000000000018549 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libGamePlugin;
+			productName = libVisionEnginePlugin;
+			productReference = 1DE116361738FBE100E51293 /* libGamePlugin.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9534450000000000018550 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0033920000000000018546 /* Build configuration list for PBXProject "GamePlugin_ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3397870000000000017779 /* Products */;
+			productRefGroup = 1DE116371738FBE100E51293 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504685136751641300000101 /* libGamePlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1971080000000000018548 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE116401738FC2100E51293 /* GameManager.cpp in Sources */,
+				1DE116411738FC2100E51293 /* GamePluginPCH.cpp in Sources */,
+				1DE116421738FC2100E51293 /* myComponent.cpp in Sources */,
+				1DE116431738FC2100E51293 /* PluginMain.cpp in Sources */,
+				2D9B88301767841E008CDDEC /* TemplateAction.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0185450000000000018544 /* distrib_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				PRODUCT_NAME = GamePlugin;
+				SYMROOT = ../../Lib/ios_xcode_anarchy/distrib_v7;
+			};
+			name = distrib_v7;
+		};
+		0976420000000000018541 /* debug_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				PRODUCT_NAME = GamePlugin;
+				SYMROOT = ../../Lib/ios_xcode_anarchy/debug_v7;
+			};
+			name = debug_v7;
+		};
+		1829640000000000018543 /* release_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				PRODUCT_NAME = GamePlugin;
+				SYMROOT = ../../Lib/ios_xcode_anarchy/release_v7;
+			};
+			name = release_v7;
+		};
+		3547230000000000018540 /* distrib_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = "$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)";
+				MACH_O_TYPE = staticlib;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVISIONDLL_LIB",
+					"-fomit-frame-pointer",
+					"-fno-implement-inlines",
+				);
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = distrib_v7;
+		};
+		4798660000000000018538 /* dev_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = "$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)";
+				MACH_O_TYPE = staticlib;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/Gameplugin";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVISIONDLL_LIB",
+					"-DHK_DEBUG",
+				);
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = dev_v7;
+		};
+		5859800000000000018539 /* release_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = "$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)";
+				MACH_O_TYPE = staticlib;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVISIONDLL_LIB",
+					"-fomit-frame-pointer",
+					"-fno-implement-inlines",
+				);
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = release_v7;
+		};
+		7769500000000000018542 /* dev_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$";
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				PRODUCT_NAME = GamePlugin;
+				SYMROOT = ../../Lib/ios_xcode_anarchy/dev_v7;
+			};
+			name = dev_v7;
+		};
+		9706640000000000018537 /* debug_v7 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_SYMBOL_SEPARATION = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					HK_ANARCHY,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VBASE_LIB,
+					LINK_WITH_VISION,
+					VISIONDLL_LIB,
+					PROFILING,
+					_VISION_IOS,
+					_VISION_POSIX,
+					_VR_GLES2,
+					VISIONDLL_LIB,
+				);
+				GCC_STRICT_ALIASING = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_USE_GCC3_PFE_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(VISION_SDK)/Source",
+					"$(HAVOK_THIRDPARTY_DIR)/redistsdks/Lua/5.1.4/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				LIBRARY_SEARCH_PATHS = "$(VISION_SDK)/Lib/ios_xcode_anarchy/$(CONFIGURATION)";
+				MACH_O_TYPE = staticlib;
+				OBJROOT = "../../Obj/ios_xcode_anarchy/$(CONFIGURATION)/GamePlugin";
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DHK_ANARCHY",
+					"-fno-strict-aliasing",
+					"-std=c++98",
+					"-mfpu=neon",
+					"-mfloat-abi=softfp",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVBASE_LIB",
+					"-DLINK_WITH_VISION",
+					"-DVISIONDLL_LIB",
+					"-DPROFILING",
+					"-D_VISION_IOS",
+					"-D_VISION_POSIX",
+					"-D_VR_GLES2",
+					"-DVISIONDLL_LIB",
+					"-D_DEBUG",
+					"-DHK_DEBUG",
+					"-DHK_DEBUG_SLOW",
+					"-fno-inline",
+				);
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				WARNING_CFLAGS = (
+					"-W",
+					"-Wall",
+					"-Wundef",
+					"-Wno-inline",
+					"-Wcast-qual",
+					"-Wno-unused",
+					"-Wno-unknown-pragmas",
+					"-Wno-ignored-qualifiers",
+					"-Wno-overflow",
+					"-Wno-type-limits",
+					"-Wno-sign-compare",
+					"-Wno-char-subscripts",
+					"-Wno-switch",
+					"-Wno-dangling-else",
+					"-Wno-comment",
+					"-Wno-shadow",
+					"-Wno-unused-parameter",
+				);
+			};
+			name = debug_v7;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0033920000000000018546 /* Build configuration list for PBXProject "GamePlugin_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7769500000000000018542 /* dev_v7 */,
+				0976420000000000018541 /* debug_v7 */,
+				0185450000000000018544 /* distrib_v7 */,
+				1829640000000000018543 /* release_v7 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = dev_v7;
+		};
+		9935150000000000018545 /* Build configuration list for PBXNativeTarget "libGamePlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4798660000000000018538 /* dev_v7 */,
+				9706640000000000018537 /* debug_v7 */,
+				3547230000000000018540 /* distrib_v7 */,
+				5859800000000000018539 /* release_v7 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = dev_v7;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9534450000000000018550 /* Project object */;
+}
