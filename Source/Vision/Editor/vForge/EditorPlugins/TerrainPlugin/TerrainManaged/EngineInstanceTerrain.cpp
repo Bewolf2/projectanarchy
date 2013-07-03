@@ -2669,7 +2669,19 @@ namespace TerrainManaged
         pManager->ScheduleTask(&task);
       }
 
-      pManager->WaitForAllThreads();
+      // Wait until all tasks are finished.
+      // Note: We can't use pManager->WaitForAllThreads() here as we need the message pump to keep going...
+      bool bFinished = false;
+      while ( !bFinished )
+      {
+        bFinished = true;
+        for ( int i = 0; i < Tasks.GetSize(); ++i )
+        {
+          bFinished &= ( Tasks[ i ].GetState() == TASKSTATE_FINISHED );
+        }
+
+        Application::DoEvents();
+      }
 
       // Unloading the sectors after each packet of processed sectors ensures that memory does not get filled too much
       for (int sy=0; sy<m_pTerrain->m_Config.m_iSectorCount[1]; ++sy)
@@ -2682,9 +2694,6 @@ namespace TerrainManaged
 
       Application::DoEvents();
     }
-
-    // Wait until everything is finished
-    pManager->WaitForAllThreads();
 
     // Restore thread count
     pManager->SetThreadCount(iThreadCount);

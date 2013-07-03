@@ -270,7 +270,7 @@ void VBillboardGroupInstance::Serialize( VArchive &ar )
     // mesh data
     ar >> iBillboardCount;
     pSM->InitMesh(iBillboardCount,this);
-    pSM->CreateInstance(hkvMat4::IdentityMatrix (),this);
+    pSM->CreateInstance(hkvMat4::IdentityMatrix (),this, false);
 
     VASSERT(pSM && pSM->GetMeshBuffer());
     VisStaticSubmesh_cl *pSubmesh = pSM->GetSubmesh(0);

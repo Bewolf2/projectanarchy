@@ -18,6 +18,9 @@ uninstallVisionSDK.exe
 git_*.bat
 _viminfo
 .gitconfig
+*.deploy
+GeneratedFiles/
+*.res
 
 # Don't include any SSH related information
 /.ssh/*
